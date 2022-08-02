@@ -30,6 +30,22 @@
 ;;    Parse all headlines in current buffer (of org mode).
 ;;  `plantuml-org-to-mindmap'
 ;;    Convert org file to mindmap image.
+;;  `plantuml-display-json'
+;;    Convert json buffer to image.
+;;  `plantuml-display-yaml'
+;;    Convert yaml buffer to image.
+;;  `plantuml-org-to-mindmap-open'
+;;    Convert org file to mindmap image and open it.
+;;  `plantuml-display-json-open'
+;;    Convert json buffer to image and open it.
+;;  `plantuml-display-yaml-open'
+;;    Convert yaml buffer to image and open it.
+;;  `plantuml-org-to-wbs'
+;;    Convert org file to Work Breakdown Structure image.
+;;  `plantuml-org-to-wbs-open'
+;;    Convert org file to Work Breakdown Structure image and open it.
+;;  `plantuml-auto-convert-open'
+;;    Dependen current buffer major mode convert image.
 ;;
 ;;; Customizable Options:
 ;;
@@ -150,7 +166,8 @@ CONTENT is source content."
           (format plantuml-cmd-template plantuml-jar-path plantuml-output-type
                   output-file
                   source))
-         (process (start-process-shell-command "plantuml" "plantuml" command)))
+         (process
+          (start-process-shell-command "plantuml" "plantuml" command)))
     (plantuml--log-command command)
     (process-put process 'output-file output-file)
     process))
@@ -211,6 +228,42 @@ SIGNAL is current signal."
   (when (memq (process-status process) '(exit))
     (shell-command
      (format "open '%s'" (process-get process 'output-file)))))
+
+(defun plantuml-org-to-wbs ()
+  "Convert org file to Work Breakdown Structure image."
+  (interactive)
+  (plantuml--run-command "wbs" (plantuml--parse-headlines)))
+
+(defun plantuml-org-to-wbs-open ()
+  "Convert org file to Work Breakdown Structure image and open it."
+  (interactive)
+  (let ((process
+         (plantuml--run-command "wbs" (plantuml--parse-headlines))))
+    (set-process-sentinel process #'plantuml--open-ouput-file-sentinel)))
+
+(defun plantuml--auto-convert-org-open ()
+  "Select a type will convert."
+  (let ((selected-item
+         (completing-read "Please choose a plantuml type you will convert"
+                          '("Mind Map" "Work Breakdown Structure"))))
+    (cond
+     ((string= "Mind Map" selected-item)
+      (plantuml-org-to-mindmap-open))
+     ((string= "Work Breakdown Structure" selected-item)
+      (plantuml-org-to-wbs-open)))))
+
+(defun plantuml-auto-convert-open ()
+  "Dependen current buffer major mode convert image."
+  (interactive)
+  (cond
+   ((eq major-mode #'json-mode)
+    (plantuml-display-json-open))
+   ((eq major-mode #'yaml-mode)
+    (plantuml-display-yaml-open))
+   ((eq major-mode #'org-mode)
+    (plantuml--auto-convert-org-open))
+   (t
+    (throw 'plantuml-error (format "not suport %s file" major-mode)))))
 
 (provide 'plantuml)
 ;;; plantuml.el ends here
