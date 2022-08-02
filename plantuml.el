@@ -167,6 +167,13 @@ CONTENT is source content."
                          (substring-no-properties
                           (buffer-substring (point-min) (point-max)))))
 
+(defun plantuml-display-yaml ()
+  "Convert yaml buffer to image."
+  (interactive)
+  (plantuml--run-command "yaml"
+                         (substring-no-properties
+                          (buffer-substring (point-min) (point-max)))))
+
 
 (defun plantuml-org-to-mindmap-open ()
   "Convert org file to mindmap image and open it."
@@ -180,6 +187,17 @@ CONTENT is source content."
   (interactive)
   (let ((process
          (plantuml--run-command "json"
+                                (substring-no-properties
+                                 (buffer-substring
+                                  (point-min)
+                                  (point-max))))))
+    (set-process-sentinel process #'plantuml--open-ouput-file-sentinel)))
+
+(defun plantuml-display-yaml-open ()
+  "Convert yaml buffer to image and open it."
+  (interactive)
+  (let ((process
+         (plantuml--run-command "yaml"
                                 (substring-no-properties
                                  (buffer-substring
                                   (point-min)
