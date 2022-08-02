@@ -117,30 +117,82 @@ HEADLINE org headline obj."
           (file-name-sans-extension (buffer-name))
           plantuml-output-type))
 
-(defun plantuml--build-source (content)
+(defun plantuml--build-source (type content)
   "Build plantuml source.
+TYPE is plantuml supported type.
 CONTENT is plantuml core content."
-  (concat "@startmindmap \n"
-          (format "!theme %s \n" plantuml-theme)
-          (when plantuml-font
-            (format "skinparam defaultFontName %s\n" plantuml-font))
-          (format "%s\n" content)
-          "@endmindmap"))
+  (concat
+   (format "@start%s \n" type)
+   (format "!theme %s \n" plantuml-theme)
+   (when plantuml-font
+     (format "skinparam defaultFontName %s\n" plantuml-font))
+   content
+   (format "\n@end%s" type)))
+
+(defun plantuml--check-jar-path ()
+  "Check if 'plantuml-jar-path' is specified by user."
+  (when (not plantuml-jar-path)
+    (throw 'plantuml-error "Must specify 'plantuml-jar-path'")))
+
+(defun plantuml--log-command (command)
+  "Log COMMAND if user specified 'plantuml-log-command'."
+  (when plantuml-log-command (print command)))
+
+
+(defun plantuml--run-command (type content)
+  "Run plantuml command.
+TYPE is plantuml type.
+CONTENT is source content."
+  (plantuml--check-jar-path)
+  (let* ((source (plantuml--build-source type content))
+         (output-file (plantuml--build-output-file))
+         (command
+          (format plantuml-cmd-template plantuml-jar-path plantuml-output-type
+                  output-file
+                  source))
+         (process (start-process-shell-command "plantuml" "plantuml" command)))
+    (plantuml--log-command command)
+    (process-put process 'output-file output-file)
+    process))
 
 (defun plantuml-org-to-mindmap ()
   "Convert org file to mindmap image."
   (interactive)
-  (when (not plantuml-jar-path)
-    (throw 'plantuml-error "Must specify 'plantuml-jar-path'"))
-  (let* ((mindmap-str
-          (plantuml--build-source (plantuml--parse-headlines)))
-         (command
-          (format plantuml-cmd-template plantuml-jar-path plantuml-output-type
-                  (plantuml--build-output-file)
-                  mindmap-str)))
-    (when plantuml-log-command (print command))
+  (plantuml--run-command "mindmap" (plantuml--parse-headlines)))
 
-    (start-process-shell-command "plantuml" "plantuml" command)))
+(defun plantuml-display-json ()
+  "Convert json buffer to image."
+  (interactive)
+  (plantuml--run-command "json"
+                         (substring-no-properties
+                          (buffer-substring (point-min) (point-max)))))
+
+
+(defun plantuml-org-to-mindmap-open ()
+  "Convert org file to mindmap image and open it."
+  (interactive)
+  (let ((process
+         (plantuml--run-command "mindmap" (plantuml--parse-headlines))))
+    (set-process-sentinel process #'plantuml--open-ouput-file-sentinel)))
+
+(defun plantuml-display-json-open ()
+  "Convert json buffer to image and open it."
+  (interactive)
+  (let ((process
+         (plantuml--run-command "json"
+                                (substring-no-properties
+                                 (buffer-substring
+                                  (point-min)
+                                  (point-max))))))
+    (set-process-sentinel process #'plantuml--open-ouput-file-sentinel)))
+
+(defun plantuml--open-ouput-file-sentinel (process signal)
+  "Define a sentinel, when process finish, open output file.
+PROCESS is current process.
+SIGNAL is current signal."
+  (when (memq (process-status process) '(exit))
+    (shell-command
+     (format "open '%s'" (process-get process 'output-file)))))
 
 (provide 'plantuml)
 ;;; plantuml.el ends here
