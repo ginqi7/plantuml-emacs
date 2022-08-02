@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentStyleType="text/css" height="389px" preserveAspectRatio="none" style="width:1834px;height:389px;background:#FFFFFF;" version="1.1" viewBox="0 0 1834 389" width="1834px" zoomAndPan="magnify"><defs/><g><rect fill="#FFFFFF" height="105.0732" rx="5" ry="5" style="stroke:#FFFFFF;stroke-width:1.0;" width="155" x="5" y="181"/><text fill="#000000" font-family="Verdana" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="84" x="10" y="197.0752">apiVersion</text><text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="17" x="104" y="197.0752">v1</text><line style="stroke:#000000;stroke-width:1.0;" x1="99" x2="99" y1="181" y2="202.0146"/><line style="stroke:#000000;stroke-width:1.0;" x1="5" x2="160" y1="202.0146" y2="202.0146"/><text fill="#000000" font-family="Verdana" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="34" x="10" y="218.0898">kind</text><text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="51" x="104" y="218.0898">Service</text><line style="stroke:#000000;stroke-width:1.0;" x1="99" x2="99" y1="202.0146" y2="223.0293"/><line style="stroke:#000000;stroke-width:1.0;" x1="5" x2="160" y1="223.0293" y2="223.0293"/><text fill="#000000" font-family="Verdana" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="73" x="10" y="239.1045">metadata</text><text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="15" x="104" y="239.1045">   </text><line style="stroke:#000000;stroke-width:1.0;" x1="99" x2="99" y1="223.0293" y2="244.0439"/><line style="stroke:#000000;stroke-width:1.0;" x1="5" x2="160" y1="244.0439" y2="244.0439"/><text fill="#000000" font-family="Verdana" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="35" x="10" y="260.1191">spec</text><text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="15" x="104" y="260.1191">   </text><line style="stroke:#000000;stroke-width:1.0;" x1="99" x2="99" y1="244.0439" y2="265.0586"/><line style="stroke:#000000;stroke-width:1.0;" x1="5" x2="160" y1="265.0586" y2="265.0586"/><text fill="#000000" font-family="Verdana" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="47" x="10" y="281.1338">status</text><text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="15" x="104" y="281.1338">   </text><line style="stroke:#000000;stroke-width:1.0;" x1="99" x2="99" y1="265.0586" y2="286.0732"/><rect fill="none" height="105.0732" rx="5" ry="5" style="stroke:#000000;stroke-width:1.0;" width="155" x="5" y="181"/><rect fill="#FFFFFF" height="147.1025" rx="5" ry="5" style="stroke:#FFFFFF;stroke-width:1.0;" width="473" x="197" y="5"/><text fill="#000000" font-family="Verdana" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="93" x="202" y="21.0752">annotations</text><text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="15" x="363" y="21.0752">   </text><line style="stroke:#000000;stroke-width:1.0;" x1="358" x2="358" y1="5" y2="26.0146"/><line style="stroke:#000000;stroke-width:1.0;" x1="197" x2="670" y1="26.0146" y2="26.0146"/><text fill="#000000" font-family="Verdana" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="151" x="202" y="42.0898">creationTimestamp</text><text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="169" x="363" y="42.0898">2022-03-19T11:38:07Z</text><line style="stroke:#000000;stroke-width:1.0;" x1="358" x2="358" y1="26.0146" y2="47.0293"/><line style="stroke:#000000;stroke-width:1.0;" x1="197" x2="670" y1="47.0293" y2="47.0293"/><text fill="#000000" font-family="Verdana" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="46" x="202" y="63.1045">labels</text><text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="15" x="363" y="63.1045">   </text><line style="stroke:#000000;stroke-width:1.0;" x1="358" x2="358" y1="47.0293" y2="68.0439"/><line style="stroke:#000000;stroke-width:1.0;" x1="197" x2="670" y1="68.0439" y2="68.0439"/><text fill="#000000" font-family="Verdana" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="43" x="202" y="84.1191">name</text><text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="114" x="363" y="84.1191">nginx-ingress-lb</text><line style="stroke:#000000;stroke-width:1.0;" x1="358" x2="358" y1="68.0439" y2="89.0586"/><line style="stroke:#000000;stroke-width:1.0;" x1="197" x2="670" y1="89.0586" y2="89.0586"/><text fill="#000000" font-family="Verdana" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="87" x="202" y="105.1338">namespace</text><text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="90" x="363" y="105.1338">kube-system</text><line style="stroke:#000000;stroke-width:1.0;" x1="358" x2="358" y1="89.0586" y2="110.0732"/><line style="stroke:#000000;stroke-width:1.0;" x1="197" x2="670" y1="110.0732" y2="110.0732"/><text fill="#000000" font-family="Verdana" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="128" x="202" y="126.1484">resourceVersion</text><text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="27" x="363" y="126.1484">703</text><line style="stroke:#000000;stroke-width:1.0;" x1="358" x2="358" y1="110.0732" y2="131.0879"/><line style="stroke:#000000;stroke-width:1.0;" x1="197" x2="670" y1="131.0879" y2="131.0879"/><text fill="#000000" font-family="Verdana" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="25" x="202" y="147.1631">uid</text><text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="302" x="363" y="147.1631">02457621-2eb7-4943-84c1-ad0051eef69b</text><line style="stroke:#000000;stroke-width:1.0;" x1="358" x2="358" y1="131.0879" y2="152.1025"/><rect fill="none" height="147.1025" rx="5" ry="5" style="stroke:#000000;stroke-width:1.0;" width="473" x="197" y="5"/><rect fill="#FFFFFF" height="15" rx="5" ry="5" style="stroke:#FFFFFF;stroke-width:1.0;" width="30" x="1075.5" y="5.5"/><rect fill="none" height="15" rx="5" ry="5" style="stroke:#000000;stroke-width:1.0;" width="30" x="1075.5" y="5.5"/><rect fill="#FFFFFF" height="42.0293" rx="5" ry="5" style="stroke:#FFFFFF;stroke-width:1.0;" width="761" x="707" y="39.5"/><text fill="#000000" font-family="Verdana" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="29" x="712" y="55.5752">app</text><text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="114" x="975" y="55.5752">nginx-ingress-lb</text><line style="stroke:#000000;stroke-width:1.0;" x1="970" x2="970" y1="39.5" y2="60.5146"/><line style="stroke:#000000;stroke-width:1.0;" x1="707" x2="1468" y1="60.5146" y2="60.5146"/><text fill="#000000" font-family="Verdana" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="253" x="712" y="76.5898">service.beta.kubernetes.io/hash</text><text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="488" x="975" y="76.5898">2d89abb1251368a63b2bd1a9e5c3add16d51b49e8b27d9cadd5e56f0</text><line style="stroke:#000000;stroke-width:1.0;" x1="970" x2="970" y1="60.5146" y2="81.5293"/><rect fill="none" height="42.0293" rx="5" ry="5" style="stroke:#000000;stroke-width:1.0;" width="761" x="707" y="39.5"/><rect fill="#FFFFFF" height="168.1172" rx="5" ry="5" style="stroke:#FFFFFF;stroke-width:1.0;" width="303" x="282" y="170.5"/><text fill="#000000" font-family="Verdana" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="71" x="287" y="186.5752">clusterIP</text><text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="114" x="466" y="186.5752">172.16.160.208</text><line style="stroke:#000000;stroke-width:1.0;" x1="461" x2="461" y1="170.5" y2="191.5146"/><line style="stroke:#000000;stroke-width:1.0;" x1="282" x2="585" y1="191.5146" y2="191.5146"/><text fill="#000000" font-family="Verdana" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="79" x="287" y="207.5898">clusterIPs</text><text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="15" x="466" y="207.5898">   </text><line style="stroke:#000000;stroke-width:1.0;" x1="461" x2="461" y1="191.5146" y2="212.5293"/><line style="stroke:#000000;stroke-width:1.0;" x1="282" x2="585" y1="212.5293" y2="212.5293"/><text fill="#000000" font-family="Verdana" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="162" x="287" y="228.6045">externalTrafficPolicy</text><text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="35" x="466" y="228.6045">Local</text><line style="stroke:#000000;stroke-width:1.0;" x1="461" x2="461" y1="212.5293" y2="233.5439"/><line style="stroke:#000000;stroke-width:1.0;" x1="282" x2="585" y1="233.5439" y2="233.5439"/><text fill="#000000" font-family="Verdana" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="169" x="287" y="249.6191">healthCheckNodePort</text><text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="45" x="466" y="249.6191">30026</text><line style="stroke:#000000;stroke-width:1.0;" x1="461" x2="461" y1="233.5439" y2="254.5586"/><line style="stroke:#000000;stroke-width:1.0;" x1="282" x2="585" y1="254.5586" y2="254.5586"/><text fill="#000000" font-family="Verdana" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="41" x="287" y="270.6338">ports</text><text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="15" x="466" y="270.6338">   </text><line style="stroke:#000000;stroke-width:1.0;" x1="461" x2="461" y1="254.5586" y2="275.5732"/><line style="stroke:#000000;stroke-width:1.0;" x1="282" x2="585" y1="275.5732" y2="275.5732"/><text fill="#000000" font-family="Verdana" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="62" x="287" y="291.6484">selector</text><text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="15" x="466" y="291.6484">   </text><line style="stroke:#000000;stroke-width:1.0;" x1="461" x2="461" y1="275.5732" y2="296.5879"/><line style="stroke:#000000;stroke-width:1.0;" x1="282" x2="585" y1="296.5879" y2="296.5879"/><text fill="#000000" font-family="Verdana" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="116" x="287" y="312.6631">sessionAffinity</text><text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="35" x="466" y="312.6631">None</text><line style="stroke:#000000;stroke-width:1.0;" x1="461" x2="461" y1="296.5879" y2="317.6025"/><line style="stroke:#000000;stroke-width:1.0;" x1="282" x2="585" y1="317.6025" y2="317.6025"/><text fill="#000000" font-family="Verdana" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="34" x="287" y="333.6777">type</text><text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="93" x="466" y="333.6777">LoadBalancer</text><line style="stroke:#000000;stroke-width:1.0;" x1="461" x2="461" y1="317.6025" y2="338.6172"/><rect fill="none" height="168.1172" rx="5" ry="5" style="stroke:#000000;stroke-width:1.0;" width="303" x="282" y="170.5"/><rect fill="#FFFFFF" height="21.0146" rx="5" ry="5" style="stroke:#FFFFFF;stroke-width:1.0;" width="124" x="1025.5" y="191"/><text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="114" x="1030.5" y="207.0752">172.16.160.208</text><rect fill="none" height="21.0146" rx="5" ry="5" style="stroke:#000000;stroke-width:1.0;" width="124" x="1025.5" y="191"/><rect fill="#FFFFFF" height="42.0293" rx="5" ry="5" style="stroke:#FFFFFF;stroke-width:1.0;" width="25" x="1075" y="236.5"/><text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="15" x="1080" y="252.5752">   </text><line style="stroke:#000000;stroke-width:1.0;" x1="1075" x2="1100" y1="257.5146" y2="257.5146"/><text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="15" x="1080" y="273.5898">   </text><rect fill="none" height="42.0293" rx="5" ry="5" style="stroke:#000000;stroke-width:1.0;" width="25" x="1075" y="236.5"/><rect fill="#FFFFFF" height="105.0732" rx="5" ry="5" style="stroke:#FFFFFF;stroke-width:1.0;" width="145" x="1505" y="105"/><text fill="#000000" font-family="Verdana" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="43" x="1510" y="121.0752">name</text><text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="30" x="1600" y="121.0752">http</text><line style="stroke:#000000;stroke-width:1.0;" x1="1595" x2="1595" y1="105" y2="126.0146"/><line style="stroke:#000000;stroke-width:1.0;" x1="1505" x2="1650" y1="126.0146" y2="126.0146"/><text fill="#000000" font-family="Verdana" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="72" x="1510" y="142.0898">nodePort</text><text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="45" x="1600" y="142.0898">32372</text><line style="stroke:#000000;stroke-width:1.0;" x1="1595" x2="1595" y1="126.0146" y2="147.0293"/><line style="stroke:#000000;stroke-width:1.0;" x1="1505" x2="1650" y1="147.0293" y2="147.0293"/><text fill="#000000" font-family="Verdana" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="33" x="1510" y="163.1045">port</text><text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="18" x="1600" y="163.1045">80</text><line style="stroke:#000000;stroke-width:1.0;" x1="1595" x2="1595" y1="147.0293" y2="168.0439"/><line style="stroke:#000000;stroke-width:1.0;" x1="1505" x2="1650" y1="168.0439" y2="168.0439"/><text fill="#000000" font-family="Verdana" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="66" x="1510" y="184.1191">protocol</text><text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="27" x="1600" y="184.1191">TCP</text><line style="stroke:#000000;stroke-width:1.0;" x1="1595" x2="1595" y1="168.0439" y2="189.0586"/><line style="stroke:#000000;stroke-width:1.0;" x1="1505" x2="1650" y1="189.0586" y2="189.0586"/><text fill="#000000" font-family="Verdana" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="80" x="1510" y="205.1338">targetPort</text><text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="18" x="1600" y="205.1338">80</text><line style="stroke:#000000;stroke-width:1.0;" x1="1595" x2="1595" y1="189.0586" y2="210.0732"/><rect fill="none" height="105.0732" rx="5" ry="5" style="stroke:#000000;stroke-width:1.0;" width="145" x="1505" y="105"/><rect fill="#FFFFFF" height="105.0732" rx="5" ry="5" style="stroke:#FFFFFF;stroke-width:1.0;" width="145" x="1505" y="228"/><text fill="#000000" font-family="Verdana" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="43" x="1510" y="244.0752">name</text><text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="37" x="1600" y="244.0752">https</text><line style="stroke:#000000;stroke-width:1.0;" x1="1595" x2="1595" y1="228" y2="249.0146"/><line style="stroke:#000000;stroke-width:1.0;" x1="1505" x2="1650" y1="249.0146" y2="249.0146"/><text fill="#000000" font-family="Verdana" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="72" x="1510" y="265.0898">nodePort</text><text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="45" x="1600" y="265.0898">32649</text><line style="stroke:#000000;stroke-width:1.0;" x1="1595" x2="1595" y1="249.0146" y2="270.0293"/><line style="stroke:#000000;stroke-width:1.0;" x1="1505" x2="1650" y1="270.0293" y2="270.0293"/><text fill="#000000" font-family="Verdana" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="33" x="1510" y="286.1045">port</text><text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="27" x="1600" y="286.1045">443</text><line style="stroke:#000000;stroke-width:1.0;" x1="1595" x2="1595" y1="270.0293" y2="291.0439"/><line style="stroke:#000000;stroke-width:1.0;" x1="1505" x2="1650" y1="291.0439" y2="291.0439"/><text fill="#000000" font-family="Verdana" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="66" x="1510" y="307.1191">protocol</text><text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="27" x="1600" y="307.1191">TCP</text><line style="stroke:#000000;stroke-width:1.0;" x1="1595" x2="1595" y1="291.0439" y2="312.0586"/><line style="stroke:#000000;stroke-width:1.0;" x1="1505" x2="1650" y1="312.0586" y2="312.0586"/><text fill="#000000" font-family="Verdana" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="80" x="1510" y="328.1338">targetPort</text><text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="27" x="1600" y="328.1338">443</text><line style="stroke:#000000;stroke-width:1.0;" x1="1595" x2="1595" y1="312.0586" y2="333.0732"/><rect fill="none" height="105.0732" rx="5" ry="5" style="stroke:#000000;stroke-width:1.0;" width="145" x="1505" y="228"/><rect fill="#FFFFFF" height="21.0146" rx="5" ry="5" style="stroke:#FFFFFF;stroke-width:1.0;" width="144" x="1015.5" y="297"/><text fill="#000000" font-family="Verdana" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="29" x="1020.5" y="313.0752">app</text><text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="95" x="1059.5" y="313.0752">ingress-nginx</text><line style="stroke:#000000;stroke-width:1.0;" x1="1054.5" x2="1054.5" y1="297" y2="318.0146"/><rect fill="none" height="21.0146" rx="5" ry="5" style="stroke:#000000;stroke-width:1.0;" width="144" x="1015.5" y="297"/><rect fill="#FFFFFF" height="21.0146" rx="5" ry="5" style="stroke:#FFFFFF;stroke-width:1.0;" width="137" x="365" y="357"/><text fill="#000000" font-family="Verdana" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="102" x="370" y="373.0752">loadBalancer</text><text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="15" x="482" y="373.0752">   </text><line style="stroke:#000000;stroke-width:1.0;" x1="477" x2="477" y1="357" y2="378.0146"/><rect fill="none" height="21.0146" rx="5" ry="5" style="stroke:#000000;stroke-width:1.0;" width="137" x="365" y="357"/><rect fill="#FFFFFF" height="21.0146" rx="5" ry="5" style="stroke:#FFFFFF;stroke-width:1.0;" width="92" x="1041.5" y="357"/><text fill="#000000" font-family="Verdana" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="57" x="1046.5" y="373.0752">ingress</text><text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="15" x="1113.5" y="373.0752">   </text><line style="stroke:#000000;stroke-width:1.0;" x1="1108.5" x2="1108.5" y1="357" y2="378.0146"/><rect fill="none" height="21.0146" rx="5" ry="5" style="stroke:#000000;stroke-width:1.0;" width="92" x="1041.5" y="357"/><rect fill="#FFFFFF" height="21.0146" rx="5" ry="5" style="stroke:#FFFFFF;stroke-width:1.0;" width="25" x="1565" y="357"/><text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="15" x="1570" y="373.0752">   </text><rect fill="none" height="21.0146" rx="5" ry="5" style="stroke:#000000;stroke-width:1.0;" width="25" x="1565" y="357"/><rect fill="#FFFFFF" height="21.0146" rx="5" ry="5" style="stroke:#FFFFFF;stroke-width:1.0;" width="140" x="1687" y="357"/><text fill="#000000" font-family="Verdana" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="15" x="1692" y="373.0752">ip</text><text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="105" x="1717" y="373.0752">192.168.13.24</text><line style="stroke:#000000;stroke-width:1.0;" x1="1712" x2="1712" y1="357" y2="378.0146"/><rect fill="none" height="21.0146" rx="5" ry="5" style="stroke:#000000;stroke-width:1.0;" width="140" x="1687" y="357"/><path d="M658,15.5 L671,15.5 C824.1637,15.5 1009.0442,14.1275 1067.9852,13.6565 " fill="none" style="stroke:#000000;stroke-width:1.0;stroke-dasharray:3.0,3.0;"/><path d="M1068.0102,16.7619 L1070.3143,13.6377 L1067.9601,10.551 L1075.7488,13.5938 L1068.0102,16.7619 " fill="#000000" style="stroke:#000000;stroke-width:1.0;"/><ellipse cx="658" cy="15.5" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><path d="M658,57.5 L671,57.5 C680.4032,57.5 689.926,57.5078 699.5318,57.5225 " fill="none" style="stroke:#000000;stroke-width:1.0;stroke-dasharray:3.0,3.0;"/><path d="M699.5265,60.6108 L701.8481,57.5265 L699.5371,54.4342 L707.2526,57.5358 L699.5265,60.6108 " fill="#000000" style="stroke:#000000;stroke-width:1.0;"/><ellipse cx="658" cy="57.5" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><path d="M148,233.5 L161,233.5 C196.7771,233.5 170.1656,185.1625 197,161.5 C198.7179,159.9852 200.4651,158.4975 202.2398,157.0366 " fill="none" style="stroke:#000000;stroke-width:1.0;stroke-dasharray:3.0,3.0;"/><path d="M204.1858,159.4913 L204.0809,155.5771 L200.2939,154.5819 L208.3766,152.1717 L204.1858,159.4913 " fill="#000000" style="stroke:#000000;stroke-width:1.0;"/><ellipse cx="148" cy="233.5" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><path d="M574,201.5 L587,201.5 C741.0318,201.5 921.755,201.5 1018.1636,201.5 " fill="none" style="stroke:#000000;stroke-width:1.0;stroke-dasharray:3.0,3.0;"/><path d="M1018.1636,204.558 L1020.4571,201.5 L1018.1636,198.442 L1025.8085,201.5 L1018.1636,204.558 " fill="#000000" style="stroke:#000000;stroke-width:1.0;"/><ellipse cx="574" cy="201.5" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><path d="M1089,246.5 L1102,246.5 C1265.5199,246.5 1312.7545,268.7298 1469,220.5 C1478.8472,217.4604 1488.7566,213.3813 1498.3662,208.753 " fill="none" style="stroke:#000000;stroke-width:1.0;stroke-dasharray:3.0,3.0;"/><path d="M1499.7503,211.5287 L1500.448,207.715 L1496.9822,205.9773 L1505.3054,205.2928 L1499.7503,211.5287 " fill="#000000" style="stroke:#000000;stroke-width:1.0;"/><ellipse cx="1089" cy="246.5" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><path d="M1089,268.5 L1102,268.5 C1241.3492,268.5 1403.6202,273.7251 1497.8869,277.2795 " fill="none" style="stroke:#000000;stroke-width:1.0;stroke-dasharray:3.0,3.0;"/><path d="M1497.7729,280.2824 L1500.1391,277.365 L1498.0009,274.2766 L1505.3941,277.5645 L1497.7729,280.2824 " fill="#000000" style="stroke:#000000;stroke-width:1.0;"/><ellipse cx="1089" cy="268.5" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><path d="M574,265.5 L587,265.5 C774.3256,265.5 1001.0779,259.8167 1067.7171,258.0306 " fill="none" style="stroke:#000000;stroke-width:1.0;stroke-dasharray:3.0,3.0;"/><path d="M1067.7999,261.093 L1070.0139,257.9685 L1067.6343,254.9681 L1075.3732,257.8235 L1067.7999,261.093 " fill="#000000" style="stroke:#000000;stroke-width:1.0;"/><ellipse cx="574" cy="265.5" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><path d="M574,286.5 L587,286.5 C736.0299,286.5 909.8261,295.9281 1008.2913,302.1499 " fill="none" style="stroke:#000000;stroke-width:1.0;stroke-dasharray:3.0,3.0;"/><path d="M1008.0995,305.1661 L1010.5534,302.2937 L1008.4831,299.1337 L1015.8318,302.6294 L1008.0995,305.1661 " fill="#000000" style="stroke:#000000;stroke-width:1.0;"/><ellipse cx="574" cy="286.5" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><path d="M148,254.5 L161,254.5 C197.7019,254.5 237.1895,254.5 274.3883,254.5 " fill="none" style="stroke:#000000;stroke-width:1.0;stroke-dasharray:3.0,3.0;"/><path d="M274.3883,257.6605 L276.7587,254.5 L274.3883,251.3395 L282.2896,254.5 L274.3883,257.6605 " fill="#000000" style="stroke:#000000;stroke-width:1.0;"/><ellipse cx="148" cy="254.5" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><path d="M1577.5518,367.5 L1590.5518,367.5 C1609.2172,367.5 1645.7555,367.5 1679.806,367.5 " fill="none" style="stroke:#000000;stroke-width:1.0;stroke-dasharray:3.0,3.0;"/><path d="M1679.806,370.5697 L1682.1083,367.5 L1679.806,364.4303 L1687.4803,367.5 L1679.806,370.5697 " fill="#000000" style="stroke:#000000;stroke-width:1.0;"/><ellipse cx="1577.5518" cy="367.5" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><path d="M1122,367.5 L1135,367.5 C1298.4344,367.5 1495.8617,367.5 1557.5972,367.5 " fill="none" style="stroke:#000000;stroke-width:1.0;stroke-dasharray:3.0,3.0;"/><path d="M1557.5972,370.6172 L1559.9351,367.5 L1557.5972,364.3828 L1565.3901,367.5 L1557.5972,370.6172 " fill="#000000" style="stroke:#000000;stroke-width:1.0;"/><ellipse cx="1122" cy="367.5" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><path d="M491,367.5 L504,367.5 C699.3178,367.5 931.4432,367.5 1033.9029,367.5 " fill="none" style="stroke:#000000;stroke-width:1.0;stroke-dasharray:3.0,3.0;"/><path d="M1033.9029,370.5964 L1036.2252,367.5 L1033.9029,364.4036 L1041.6438,367.5 L1033.9029,370.5964 " fill="#000000" style="stroke:#000000;stroke-width:1.0;"/><ellipse cx="491" cy="367.5" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><path d="M148,275.5 L161,275.5 C196.7771,275.5 167.3882,327.4216 197,347.5 C245.0716,380.0952 311.9418,382.81 362.2317,378.6946 " fill="none" style="stroke:#000000;stroke-width:1.0;stroke-dasharray:3.0,3.0;"/><path d="M362.5056,381.7382 L364.5144,378.4892 L361.9579,375.651 L369.8407,378.0099 L362.5056,381.7382 " fill="#000000" style="stroke:#000000;stroke-width:1.0;"/><ellipse cx="148" cy="275.5" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><!--MD5=[85da4b2a8313f54d96ddcb78878d27e4]
+@startyaml 
+!theme plain 
+skinparam defaultFontName 思源宋体 VF
+apiVersion: v1
+kind: Service
+metadata:
+  annotations:
+  creationTimestamp: "2022-03-19T11:38:07Z"
+  labels:
+    app: nginx-ingress-lb
+    service.beta.kubernetes.io/hash: 2d89abb1251368a63b2bd1a9e5c3add16d51b49e8b27d9cadd5e56f0
+  name: nginx-ingress-lb
+  namespace: kube-system
+  resourceVersion: "703"
+  uid: 02457621-2eb7-4943-84c1-ad0051eef69b
+spec:
+  clusterIP: 172.16.160.208
+  clusterIPs:
+  - 172.16.160.208
+  externalTrafficPolicy: Local
+  healthCheckNodePort: 30026
+  ports:
+  - name: http
+    nodePort: 32372
+    port: 80
+    protocol: TCP
+    targetPort: 80
+  - name: https
+    nodePort: 32649
+    port: 443
+    protocol: TCP
+    targetPort: 443
+  selector:
+    app: ingress-nginx
+  sessionAffinity: None
+  type: LoadBalancer
+status:
+  loadBalancer:
+    ingress:
+    - ip: 192.168.13.24
+
+@endyaml
+
+@startyaml 
+
+
+
+
+
+
+
+<style>
+  root {
+    BackgroundColor white
+    FontColor black
+    FontName Verdana
+    HyperLinkColor blue
+    LineColor black
+    LineThickness 1
+    Margin 5
+  }
+  caption {
+    LineThickness 0
+  }
+  footer {
+    LineThickness 0
+  }
+  header {
+    LineThickness 0
+  }
+  node {
+    MaximumWidth 300
+  }
+  title {
+    FontSize 22
+    LineThickness 0
+  }
+</style>
+
+skinparam ArrowLollipopColor black
+skinparam BackgroundColor white
+skinparam DefaultFontName Verdana
+skinparam DefaultMonospacedFontName Courier
+skinparam LifelineStrategy nosolid
+skinparam ParticipantPadding 10
+skinparam SequenceLifeLineBorderColor black
+skinparam Shadowing false
+skinparam UseBetaStyle true
+
+skinparam Activity {
+  BackgroundColor white
+  BarColor black
+  BorderColor black
+  FontColor black
+  FontName Verdana
+}
+skinparam Boundary {
+  FontColor black
+}
+skinparam Box {
+  Padding 5
+}
+skinparam CircledCharacter {
+  FontColor black
+  FontName Courier
+  Radius 9
+}
+skinparam Class {
+  BackgroundColor white
+  BorderColor black
+  FontColor black
+  FontName Verdana
+}
+skinparam ClassAttribute {
+  FontColor black
+  FontName Verdana
+}
+skinparam ClassStereotype {
+  FontColor black
+  FontName Verdana
+}
+skinparam Footer {
+  FontColor black
+  FontName Verdana
+}
+skinparam Header {
+  FontColor black
+  FontName Verdana
+}
+skinparam Hyperlink {
+  Color blue
+}
+skinparam IconPackage {
+  Color black
+  BackgroundColor white
+}
+skinparam IconPrivate {
+  Color black
+  BackgroundColor white
+}
+skinparam IconProtected {
+  Color black
+  BackgroundColor white
+}
+skinparam IconPublic {
+  Color black
+  BackgroundColor white
+}
+skinparam Note {
+  FontColor black
+  FontName Verdana
+}
+skinparam Object {
+  BorderColor black
+}
+skinparam Package {
+  BorderColor black
+  FontColor black
+  FontName Verdana
+}
+skinparam State {
+  BackgroundColor white
+  BorderColor black
+}
+skinparam StereotypeA {
+  BackgroundColor white
+  BorderColor black
+}
+skinparam StereotypeC {
+  BackgroundColor white
+  BorderColor black
+}
+skinparam StereotypeE {
+  BackgroundColor white
+  BorderColor black
+}
+skinparam StereotypeI {
+  BackgroundColor white
+  BorderColor black
+}
+skinparam StereotypeN {
+  BackgroundColor white
+  BorderColor black
+}
+skinparam UseCaseStereoType {
+  FontColor black
+  FontName Verdana
+}
+skinparam defaultFontName 思源宋体 VF
+apiVersion: v1
+kind: Service
+metadata:
+  annotations:
+  creationTimestamp: "2022-03-19T11:38:07Z"
+  labels:
+    app: nginx-ingress-lb
+    service.beta.kubernetes.io/hash: 2d89abb1251368a63b2bd1a9e5c3add16d51b49e8b27d9cadd5e56f0
+  name: nginx-ingress-lb
+  namespace: kube-system
+  resourceVersion: "703"
+  uid: 02457621-2eb7-4943-84c1-ad0051eef69b
+spec:
+  clusterIP: 172.16.160.208
+  clusterIPs:
+  - 172.16.160.208
+  externalTrafficPolicy: Local
+  healthCheckNodePort: 30026
+  ports:
+  - name: http
+    nodePort: 32372
+    port: 80
+    protocol: TCP
+    targetPort: 80
+  - name: https
+    nodePort: 32649
+    port: 443
+    protocol: TCP
+    targetPort: 443
+  selector:
+    app: ingress-nginx
+  sessionAffinity: None
+  type: LoadBalancer
+status:
+  loadBalancer:
+    ingress:
+    - ip: 192.168.13.24
+
+@endyaml
+
+PlantUML version 1.2022.6(Wed Jun 22 01:34:49 CST 2022)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Default Encoding: UTF-8
+Language: zh
+Country: CN
+--></g></svg>

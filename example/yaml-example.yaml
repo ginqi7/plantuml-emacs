@@ -1,0 +1,37 @@
+apiVersion: v1
+kind: Service
+metadata:
+  annotations:
+  creationTimestamp: "2022-03-19T11:38:07Z"
+  labels:
+    app: nginx-ingress-lb
+    service.beta.kubernetes.io/hash: 2d89abb1251368a63b2bd1a9e5c3add16d51b49e8b27d9cadd5e56f0
+  name: nginx-ingress-lb
+  namespace: kube-system
+  resourceVersion: "703"
+  uid: 02457621-2eb7-4943-84c1-ad0051eef69b
+spec:
+  clusterIP: 172.16.160.208
+  clusterIPs:
+  - 172.16.160.208
+  externalTrafficPolicy: Local
+  healthCheckNodePort: 30026
+  ports:
+  - name: http
+    nodePort: 32372
+    port: 80
+    protocol: TCP
+    targetPort: 80
+  - name: https
+    nodePort: 32649
+    port: 443
+    protocol: TCP
+    targetPort: 443
+  selector:
+    app: ingress-nginx
+  sessionAffinity: None
+  type: LoadBalancer
+status:
+  loadBalancer:
+    ingress:
+    - ip: 192.168.13.24

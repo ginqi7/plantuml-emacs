@@ -1,0 +1,344 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentStyleType="text/css" height="2440px" preserveAspectRatio="none" style="width:1032px;height:2440px;background:#FFFFFF;" version="1.1" viewBox="0 0 1032 2440" width="1032px" zoomAndPan="magnify"><defs/><g><rect fill="#FFFFFF" height="184.8828" rx="12.5" ry="12.5" style="stroke:#000000;stroke-width:1.0;" width="303" x="5" y="1126.9727"/><text fill="#000000" font-family="思源宋体 VF" font-size="14" lengthAdjust="spacing" textLength="4" x="15" y="1150.5078"> </text><text fill="#000000" font-family="思源宋体 VF" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="132" x="19" y="1150.5078">1. Design Patterns</text><text fill="#000000" font-family="思源宋体 VF" font-size="14" lengthAdjust="spacing" textLength="4" x="151" y="1150.5078">:</text><text fill="#000000" font-family="思源宋体 VF" font-size="14" lengthAdjust="spacing" textLength="4" x="15" y="1166.9961"> </text><text fill="#000000" font-family="思源宋体 VF" font-size="14" lengthAdjust="spacing" textLength="279" x="15" y="1183.4844">These design patterns are all about class</text><text fill="#000000" font-family="思源宋体 VF" font-size="14" lengthAdjust="spacing" textLength="278" x="15" y="1199.9727">instantiation. This pattern can be further</text><text fill="#000000" font-family="思源宋体 VF" font-size="14" lengthAdjust="spacing" textLength="273" x="15" y="1216.4609">divided into class-creation patterns and</text><text fill="#000000" font-family="思源宋体 VF" font-size="14" lengthAdjust="spacing" textLength="224" x="15" y="1232.9492">object-creational patterns. While</text><text fill="#000000" font-family="思源宋体 VF" font-size="14" lengthAdjust="spacing" textLength="267" x="15" y="1249.4375">class-creation patterns use inheritance</text><text fill="#000000" font-family="思源宋体 VF" font-size="14" lengthAdjust="spacing" textLength="262" x="15" y="1265.9258">effectively in the instantiation process,</text><text fill="#000000" font-family="思源宋体 VF" font-size="14" lengthAdjust="spacing" textLength="272" x="15" y="1282.4141">object-creation patterns use delegation</text><text fill="#000000" font-family="思源宋体 VF" font-size="14" lengthAdjust="spacing" textLength="207" x="15" y="1298.9023">effectively to get the job done.</text><rect fill="#FFFFFF" height="184.8828" rx="12.5" ry="12.5" style="stroke:#000000;stroke-width:1.0;" width="303" x="348" y="208.6621"/><text fill="#000000" font-family="思源宋体 VF" font-size="14" lengthAdjust="spacing" textLength="4" x="358" y="232.1973"> </text><text fill="#000000" font-family="思源宋体 VF" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="209" x="362" y="232.1973">1. Creational design patterns</text><text fill="#000000" font-family="思源宋体 VF" font-size="14" lengthAdjust="spacing" textLength="4" x="571" y="232.1973">:</text><text fill="#000000" font-family="思源宋体 VF" font-size="14" lengthAdjust="spacing" textLength="4" x="358" y="248.6855"> </text><text fill="#000000" font-family="思源宋体 VF" font-size="14" lengthAdjust="spacing" textLength="279" x="358" y="265.1738">These design patterns are all about class</text><text fill="#000000" font-family="思源宋体 VF" font-size="14" lengthAdjust="spacing" textLength="278" x="358" y="281.6621">instantiation. This pattern can be further</text><text fill="#000000" font-family="思源宋体 VF" font-size="14" lengthAdjust="spacing" textLength="273" x="358" y="298.1504">divided into class-creation patterns and</text><text fill="#000000" font-family="思源宋体 VF" font-size="14" lengthAdjust="spacing" textLength="224" x="358" y="314.6387">object-creational patterns. While</text><text fill="#000000" font-family="思源宋体 VF" font-size="14" lengthAdjust="spacing" textLength="267" x="358" y="331.127">class-creation patterns use inheritance</text><text fill="#000000" font-family="思源宋体 VF" font-size="14" lengthAdjust="spacing" textLength="262" x="358" y="347.6152">effectively in the instantiation process,</text><text fill="#000000" font-family="思源宋体 VF" font-size="14" lengthAdjust="spacing" textLength="272" x="358" y="364.1035">object-creation patterns use delegation</text><text fill="#000000" font-family="思源宋体 VF" font-size="14" lengthAdjust="spacing" textLength="207" x="358" y="380.5918">effectively to get the job done.</text><rect fill="#FFFFFF" height="85.9531" rx="12.5" ry="12.5" style="stroke:#000000;stroke-width:1.0;" width="303" x="691" y="10"/><text fill="#000000" font-family="思源宋体 VF" font-size="14" lengthAdjust="spacing" textLength="4" x="701" y="33.5352"> </text><text fill="#000000" font-family="思源宋体 VF" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="134" x="705" y="33.5352">1. Abstract Factory</text><text fill="#000000" font-family="思源宋体 VF" font-size="14" lengthAdjust="spacing" textLength="4" x="839" y="33.5352">:</text><text fill="#000000" font-family="思源宋体 VF" font-size="14" lengthAdjust="spacing" textLength="4" x="701" y="50.0234"> </text><text fill="#000000" font-family="思源宋体 VF" font-size="14" lengthAdjust="spacing" textLength="279" x="701" y="66.5117">Creates an instance of several families of</text><text fill="#000000" font-family="思源宋体 VF" font-size="14" lengthAdjust="spacing" textLength="48" x="701" y="83">classes</text><path d="M651,301.1035 L661,301.1035 C676,301.1035 666,52.9766 681,52.9766 L691,52.9766 " fill="none" style="stroke:#000000;stroke-width:1.0;"/><rect fill="#FFFFFF" height="85.9531" rx="12.5" ry="12.5" style="stroke:#000000;stroke-width:1.0;" width="284" x="691" y="105.9531"/><text fill="#000000" font-family="思源宋体 VF" font-size="14" lengthAdjust="spacing" textLength="4" x="701" y="129.4883"> </text><text fill="#000000" font-family="思源宋体 VF" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="68" x="705" y="129.4883">2. Builder</text><text fill="#000000" font-family="思源宋体 VF" font-size="14" lengthAdjust="spacing" textLength="4" x="773" y="129.4883">:</text><text fill="#000000" font-family="思源宋体 VF" font-size="14" lengthAdjust="spacing" textLength="4" x="701" y="145.9766"> </text><text fill="#000000" font-family="思源宋体 VF" font-size="14" lengthAdjust="spacing" textLength="260" x="701" y="162.4648">Separates object construction from its</text><text fill="#000000" font-family="思源宋体 VF" font-size="14" lengthAdjust="spacing" textLength="101" x="701" y="178.9531">representation</text><path d="M651,301.1035 L661,301.1035 C676,301.1035 666,148.9297 681,148.9297 L691,148.9297 " fill="none" style="stroke:#000000;stroke-width:1.0;"/><rect fill="#FFFFFF" height="85.9531" rx="12.5" ry="12.5" style="stroke:#000000;stroke-width:1.0;" width="283" x="691" y="201.9063"/><text fill="#000000" font-family="思源宋体 VF" font-size="14" lengthAdjust="spacing" textLength="4" x="701" y="225.4414"> </text><text fill="#000000" font-family="思源宋体 VF" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="128" x="705" y="225.4414">3. Factory Method</text><text fill="#000000" font-family="思源宋体 VF" font-size="14" lengthAdjust="spacing" textLength="4" x="833" y="225.4414">:</text><text fill="#000000" font-family="思源宋体 VF" font-size="14" lengthAdjust="spacing" textLength="4" x="701" y="241.9297"> </text><text fill="#000000" font-family="思源宋体 VF" font-size="14" lengthAdjust="spacing" textLength="259" x="701" y="258.418">Creates an instance of several derived</text><text fill="#000000" font-family="思源宋体 VF" font-size="14" lengthAdjust="spacing" textLength="48" x="701" y="274.9063">classes</text><path d="M651,301.1035 L661,301.1035 C676,301.1035 666,244.8828 681,244.8828 L691,244.8828 " fill="none" style="stroke:#000000;stroke-width:1.0;"/><rect fill="#FFFFFF" height="102.4414" rx="12.5" ry="12.5" style="stroke:#000000;stroke-width:1.0;" width="316" x="691" y="297.8594"/><text fill="#000000" font-family="思源宋体 VF" font-size="14" lengthAdjust="spacing" textLength="4" x="701" y="321.3945"> </text><text fill="#000000" font-family="思源宋体 VF" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="101" x="705" y="321.3945">4. Object Pool</text><text fill="#000000" font-family="思源宋体 VF" font-size="14" lengthAdjust="spacing" textLength="4" x="806" y="321.3945">:</text><text fill="#000000" font-family="思源宋体 VF" font-size="14" lengthAdjust="spacing" textLength="4" x="701" y="337.8828"> </text><text fill="#000000" font-family="思源宋体 VF" font-size="14" lengthAdjust="spacing" textLength="292" x="701" y="354.3711">Avoid expensive acquisition and release of</text><text fill="#000000" font-family="思源宋体 VF" font-size="14" lengthAdjust="spacing" textLength="284" x="701" y="370.8594">resources by recycling objects that are no</text><text fill="#000000" font-family="思源宋体 VF" font-size="14" lengthAdjust="spacing" textLength="90" x="701" y="387.3477">longer in use</text><path d="M651,301.1035 L661,301.1035 C676,301.1035 666,349.0801 681,349.0801 L691,349.0801 " fill="none" style="stroke:#000000;stroke-width:1.0;"/><rect fill="#FFFFFF" height="85.9531" rx="12.5" ry="12.5" style="stroke:#000000;stroke-width:1.0;" width="307" x="691" y="410.3008"/><text fill="#000000" font-family="思源宋体 VF" font-size="14" lengthAdjust="spacing" textLength="4" x="701" y="433.8359"> </text><text fill="#000000" font-family="思源宋体 VF" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="87" x="705" y="433.8359">5. Prototype</text><text fill="#000000" font-family="思源宋体 VF" font-size="14" lengthAdjust="spacing" textLength="4" x="792" y="433.8359">:</text><text fill="#000000" font-family="思源宋体 VF" font-size="14" lengthAdjust="spacing" textLength="4" x="701" y="450.3242"> </text><text fill="#000000" font-family="思源宋体 VF" font-size="14" lengthAdjust="spacing" textLength="283" x="701" y="466.8125">A fully initialized instance to be copied or</text><text fill="#000000" font-family="思源宋体 VF" font-size="14" lengthAdjust="spacing" textLength="46" x="701" y="483.3008">cloned</text><path d="M651,301.1035 L661,301.1035 C676,301.1035 666,453.2773 681,453.2773 L691,453.2773 " fill="none" style="stroke:#000000;stroke-width:1.0;"/><rect fill="#FFFFFF" height="85.9531" rx="12.5" ry="12.5" style="stroke:#000000;stroke-width:1.0;" width="312" x="691" y="506.2539"/><text fill="#000000" font-family="思源宋体 VF" font-size="14" lengthAdjust="spacing" textLength="4" x="701" y="529.7891"> </text><text fill="#000000" font-family="思源宋体 VF" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="85" x="705" y="529.7891">6. Singleton</text><text fill="#000000" font-family="思源宋体 VF" font-size="14" lengthAdjust="spacing" textLength="4" x="790" y="529.7891">:</text><text fill="#000000" font-family="思源宋体 VF" font-size="14" lengthAdjust="spacing" textLength="4" x="701" y="546.2773"> </text><text fill="#000000" font-family="思源宋体 VF" font-size="14" lengthAdjust="spacing" textLength="288" x="701" y="562.7656">A class of which only a single instance can</text><text fill="#000000" font-family="思源宋体 VF" font-size="14" lengthAdjust="spacing" textLength="33" x="701" y="579.2539">exist</text><path d="M651,301.1035 L661,301.1035 C676,301.1035 666,549.2305 681,549.2305 L691,549.2305 " fill="none" style="stroke:#000000;stroke-width:1.0;"/><path d="M308,1219.4141 L318,1219.4141 C333,1219.4141 323,301.1035 338,301.1035 L348,301.1035 " fill="none" style="stroke:#000000;stroke-width:1.0;"/><rect fill="#FFFFFF" height="151.9063" rx="12.5" ry="12.5" style="stroke:#000000;stroke-width:1.0;" width="309" x="348" y="872.0898"/><text fill="#000000" font-family="思源宋体 VF" font-size="14" lengthAdjust="spacing" textLength="4" x="358" y="895.625"> </text><text fill="#000000" font-family="思源宋体 VF" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="205" x="362" y="895.625">2. Structural design patterns</text><text fill="#000000" font-family="思源宋体 VF" font-size="14" lengthAdjust="spacing" textLength="4" x="567" y="895.625">:</text><text fill="#000000" font-family="思源宋体 VF" font-size="14" lengthAdjust="spacing" textLength="4" x="358" y="912.1133"> </text><text fill="#000000" font-family="思源宋体 VF" font-size="14" lengthAdjust="spacing" textLength="282" x="358" y="928.6016">These design patterns are all about Class</text><text fill="#000000" font-family="思源宋体 VF" font-size="14" lengthAdjust="spacing" textLength="238" x="358" y="945.0898">and Object composition. Structural</text><text fill="#000000" font-family="思源宋体 VF" font-size="14" lengthAdjust="spacing" textLength="285" x="358" y="961.5781">class-creation patterns use inheritance to</text><text fill="#000000" font-family="思源宋体 VF" font-size="14" lengthAdjust="spacing" textLength="208" x="358" y="978.0664">compose interfaces. Structural</text><text fill="#000000" font-family="思源宋体 VF" font-size="14" lengthAdjust="spacing" textLength="275" x="358" y="994.5547">object-patterns define ways to compose</text><text fill="#000000" font-family="思源宋体 VF" font-size="14" lengthAdjust="spacing" textLength="240" x="358" y="1011.043">objects to obtain new functionality.</text><rect fill="#FFFFFF" height="69.4648" rx="12.5" ry="12.5" style="stroke:#000000;stroke-width:1.0;" width="265" x="697" y="602.207"/><text fill="#000000" font-family="思源宋体 VF" font-size="14" lengthAdjust="spacing" textLength="4" x="707" y="625.7422"> </text><text fill="#000000" font-family="思源宋体 VF" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="73" x="711" y="625.7422">1. Adapter</text><text fill="#000000" font-family="思源宋体 VF" font-size="14" lengthAdjust="spacing" textLength="4" x="784" y="625.7422">:</text><text fill="#000000" font-family="思源宋体 VF" font-size="14" lengthAdjust="spacing" textLength="4" x="707" y="642.2305"> </text><text fill="#000000" font-family="思源宋体 VF" font-size="14" lengthAdjust="spacing" textLength="245" x="707" y="658.7188">Match interfaces of different classes</text><path d="M657,948.043 L667,948.043 C682,948.043 672,636.9395 687,636.9395 L697,636.9395 " fill="none" style="stroke:#000000;stroke-width:1.0;"/><rect fill="#FFFFFF" height="85.9531" rx="12.5" ry="12.5" style="stroke:#000000;stroke-width:1.0;" width="290" x="697" y="681.6719"/><text fill="#000000" font-family="思源宋体 VF" font-size="14" lengthAdjust="spacing" textLength="4" x="707" y="705.207"> </text><text fill="#000000" font-family="思源宋体 VF" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="63" x="711" y="705.207">2. Bridge</text><text fill="#000000" font-family="思源宋体 VF" font-size="14" lengthAdjust="spacing" textLength="4" x="774" y="705.207">:</text><text fill="#000000" font-family="思源宋体 VF" font-size="14" lengthAdjust="spacing" textLength="4" x="707" y="721.6953"> </text><text fill="#000000" font-family="思源宋体 VF" font-size="14" lengthAdjust="spacing" textLength="266" x="707" y="738.1836">Separates an object’s interface from its</text><text fill="#000000" font-family="思源宋体 VF" font-size="14" lengthAdjust="spacing" textLength="108" x="707" y="754.6719">implementation</text><path d="M657,948.043 L667,948.043 C682,948.043 672,724.6484 687,724.6484 L697,724.6484 " fill="none" style="stroke:#000000;stroke-width:1.0;"/><rect fill="#FFFFFF" height="85.9531" rx="12.5" ry="12.5" style="stroke:#000000;stroke-width:1.0;" width="303" x="697" y="777.625"/><text fill="#000000" font-family="思源宋体 VF" font-size="14" lengthAdjust="spacing" textLength="4" x="707" y="801.1602"> </text><text fill="#000000" font-family="思源宋体 VF" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="95" x="711" y="801.1602">3. Composite</text><text fill="#000000" font-family="思源宋体 VF" font-size="14" lengthAdjust="spacing" textLength="4" x="806" y="801.1602">:</text><text fill="#000000" font-family="思源宋体 VF" font-size="14" lengthAdjust="spacing" textLength="4" x="707" y="817.6484"> </text><text fill="#000000" font-family="思源宋体 VF" font-size="14" lengthAdjust="spacing" textLength="279" x="707" y="834.1367">A tree structure of simple and composite</text><text fill="#000000" font-family="思源宋体 VF" font-size="14" lengthAdjust="spacing" textLength="49" x="707" y="850.625">objects</text><path d="M657,948.043 L667,948.043 C682,948.043 672,820.6016 687,820.6016 L697,820.6016 " fill="none" style="stroke:#000000;stroke-width:1.0;"/><rect fill="#FFFFFF" height="69.4648" rx="12.5" ry="12.5" style="stroke:#000000;stroke-width:1.0;" width="311" x="697" y="873.5781"/><text fill="#000000" font-family="思源宋体 VF" font-size="14" lengthAdjust="spacing" textLength="4" x="707" y="897.1133"> </text><text fill="#000000" font-family="思源宋体 VF" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="87" x="711" y="897.1133">4. Decorator</text><text fill="#000000" font-family="思源宋体 VF" font-size="14" lengthAdjust="spacing" textLength="4" x="798" y="897.1133">:</text><text fill="#000000" font-family="思源宋体 VF" font-size="14" lengthAdjust="spacing" textLength="4" x="707" y="913.6016"> </text><text fill="#000000" font-family="思源宋体 VF" font-size="14" lengthAdjust="spacing" textLength="291" x="707" y="930.0898">Add responsibilities to objects dynamically</text><path d="M657,948.043 L667,948.043 C682,948.043 672,908.3105 687,908.3105 L697,908.3105 " fill="none" style="stroke:#000000;stroke-width:1.0;"/><rect fill="#FFFFFF" height="85.9531" rx="12.5" ry="12.5" style="stroke:#000000;stroke-width:1.0;" width="289" x="697" y="953.043"/><text fill="#000000" font-family="思源宋体 VF" font-size="14" lengthAdjust="spacing" textLength="4" x="707" y="976.5781"> </text><text fill="#000000" font-family="思源宋体 VF" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="65" x="711" y="976.5781">5. Facade</text><text fill="#000000" font-family="思源宋体 VF" font-size="14" lengthAdjust="spacing" textLength="4" x="776" y="976.5781">:</text><text fill="#000000" font-family="思源宋体 VF" font-size="14" lengthAdjust="spacing" textLength="4" x="707" y="993.0664"> </text><text fill="#000000" font-family="思源宋体 VF" font-size="14" lengthAdjust="spacing" textLength="265" x="707" y="1009.5547">A single class that represents an entire</text><text fill="#000000" font-family="思源宋体 VF" font-size="14" lengthAdjust="spacing" textLength="72" x="707" y="1026.043">subsystem</text><path d="M657,948.043 L667,948.043 C682,948.043 672,996.0195 687,996.0195 L697,996.0195 " fill="none" style="stroke:#000000;stroke-width:1.0;"/><rect fill="#FFFFFF" height="85.9531" rx="12.5" ry="12.5" style="stroke:#000000;stroke-width:1.0;" width="306" x="697" y="1048.9961"/><text fill="#000000" font-family="思源宋体 VF" font-size="14" lengthAdjust="spacing" textLength="4" x="707" y="1072.5313"> </text><text fill="#000000" font-family="思源宋体 VF" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="87" x="711" y="1072.5313">6. Flyweight</text><text fill="#000000" font-family="思源宋体 VF" font-size="14" lengthAdjust="spacing" textLength="4" x="798" y="1072.5313">:</text><text fill="#000000" font-family="思源宋体 VF" font-size="14" lengthAdjust="spacing" textLength="4" x="707" y="1089.0195"> </text><text fill="#000000" font-family="思源宋体 VF" font-size="14" lengthAdjust="spacing" textLength="282" x="707" y="1105.5078">A fine-grained instance used for efficient</text><text fill="#000000" font-family="思源宋体 VF" font-size="14" lengthAdjust="spacing" textLength="52" x="707" y="1121.9961">sharing</text><path d="M657,948.043 L667,948.043 C682,948.043 672,1091.9727 687,1091.9727 L697,1091.9727 " fill="none" style="stroke:#000000;stroke-width:1.0;"/><rect fill="#FFFFFF" height="69.4648" rx="12.5" ry="12.5" style="stroke:#000000;stroke-width:1.0;" width="251" x="697" y="1144.9492"/><text fill="#000000" font-family="思源宋体 VF" font-size="14" lengthAdjust="spacing" textLength="4" x="707" y="1168.4844"> </text><text fill="#000000" font-family="思源宋体 VF" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="149" x="711" y="1168.4844">7. Private Class Data</text><text fill="#000000" font-family="思源宋体 VF" font-size="14" lengthAdjust="spacing" textLength="4" x="860" y="1168.4844">:</text><text fill="#000000" font-family="思源宋体 VF" font-size="14" lengthAdjust="spacing" textLength="4" x="707" y="1184.9727"> </text><text fill="#000000" font-family="思源宋体 VF" font-size="14" lengthAdjust="spacing" textLength="231" x="707" y="1201.4609">Restricts accessor/mutator access</text><path d="M657,948.043 L667,948.043 C682,948.043 672,1179.6816 687,1179.6816 L697,1179.6816 " fill="none" style="stroke:#000000;stroke-width:1.0;"/><rect fill="#FFFFFF" height="69.4648" rx="12.5" ry="12.5" style="stroke:#000000;stroke-width:1.0;" width="281" x="697" y="1224.4141"/><text fill="#000000" font-family="思源宋体 VF" font-size="14" lengthAdjust="spacing" textLength="4" x="707" y="1247.9492"> </text><text fill="#000000" font-family="思源宋体 VF" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="57" x="711" y="1247.9492">8. Proxy</text><text fill="#000000" font-family="思源宋体 VF" font-size="14" lengthAdjust="spacing" textLength="4" x="768" y="1247.9492">:</text><text fill="#000000" font-family="思源宋体 VF" font-size="14" lengthAdjust="spacing" textLength="4" x="707" y="1264.4375"> </text><text fill="#000000" font-family="思源宋体 VF" font-size="14" lengthAdjust="spacing" textLength="261" x="707" y="1280.9258">An object representing another object</text><path d="M657,948.043 L667,948.043 C682,948.043 672,1259.1465 687,1259.1465 L697,1259.1465 " fill="none" style="stroke:#000000;stroke-width:1.0;"/><path d="M308,1219.4141 L318,1219.4141 C333,1219.4141 323,948.043 338,948.043 L348,948.043 " fill="none" style="stroke:#000000;stroke-width:1.0;"/><rect fill="#FFFFFF" height="135.418" rx="12.5" ry="12.5" style="stroke:#000000;stroke-width:1.0;" width="319" x="348" y="1798.6445"/><text fill="#000000" font-family="思源宋体 VF" font-size="14" lengthAdjust="spacing" textLength="4" x="358" y="1822.1797"> </text><text fill="#000000" font-family="思源宋体 VF" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="210" x="362" y="1822.1797">3. Behavioral design patterns</text><text fill="#000000" font-family="思源宋体 VF" font-size="14" lengthAdjust="spacing" textLength="4" x="572" y="1822.1797">:</text><text fill="#000000" font-family="思源宋体 VF" font-size="14" lengthAdjust="spacing" textLength="4" x="358" y="1838.668"> </text><text fill="#000000" font-family="思源宋体 VF" font-size="14" lengthAdjust="spacing" textLength="292" x="358" y="1855.1563">These design patterns are all about Class's</text><text fill="#000000" font-family="思源宋体 VF" font-size="14" lengthAdjust="spacing" textLength="299" x="358" y="1871.6445">objects communication. Behavioral patterns</text><text fill="#000000" font-family="思源宋体 VF" font-size="14" lengthAdjust="spacing" textLength="298" x="358" y="1888.1328">are those patterns that are most specifically</text><text fill="#000000" font-family="思源宋体 VF" font-size="14" lengthAdjust="spacing" textLength="277" x="358" y="1904.6211">concerned with communication between</text><text fill="#000000" font-family="思源宋体 VF" font-size="14" lengthAdjust="spacing" textLength="53" x="358" y="1921.1094">objects.</text><rect fill="#FFFFFF" height="85.9531" rx="12.5" ry="12.5" style="stroke:#000000;stroke-width:1.0;" width="318" x="707" y="1303.8789"/><text fill="#000000" font-family="思源宋体 VF" font-size="14" lengthAdjust="spacing" textLength="4" x="717" y="1327.4141"> </text><text fill="#000000" font-family="思源宋体 VF" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="183" x="721" y="1327.4141">1. Chain of responsibility</text><text fill="#000000" font-family="思源宋体 VF" font-size="14" lengthAdjust="spacing" textLength="4" x="904" y="1327.4141">:</text><text fill="#000000" font-family="思源宋体 VF" font-size="14" lengthAdjust="spacing" textLength="4" x="717" y="1343.9023"> </text><text fill="#000000" font-family="思源宋体 VF" font-size="14" lengthAdjust="spacing" textLength="298" x="717" y="1360.3906">A way of passing a request between a chain</text><text fill="#000000" font-family="思源宋体 VF" font-size="14" lengthAdjust="spacing" textLength="67" x="717" y="1376.8789">of objects</text><path d="M667,1866.3535 L677,1866.3535 C692,1866.3535 682,1346.8555 697,1346.8555 L707,1346.8555 " fill="none" style="stroke:#000000;stroke-width:1.0;"/><rect fill="#FFFFFF" height="85.9531" rx="12.5" ry="12.5" style="stroke:#000000;stroke-width:1.0;" width="286" x="707" y="1399.832"/><text fill="#000000" font-family="思源宋体 VF" font-size="14" lengthAdjust="spacing" textLength="4" x="717" y="1423.3672"> </text><text fill="#000000" font-family="思源宋体 VF" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="90" x="721" y="1423.3672">2. Command</text><text fill="#000000" font-family="思源宋体 VF" font-size="14" lengthAdjust="spacing" textLength="4" x="811" y="1423.3672">:</text><text fill="#000000" font-family="思源宋体 VF" font-size="14" lengthAdjust="spacing" textLength="4" x="717" y="1439.8555"> </text><text fill="#000000" font-family="思源宋体 VF" font-size="14" lengthAdjust="spacing" textLength="262" x="717" y="1456.3438">Encapsulate a command request as an</text><text fill="#000000" font-family="思源宋体 VF" font-size="14" lengthAdjust="spacing" textLength="42" x="717" y="1472.832">object</text><path d="M667,1866.3535 L677,1866.3535 C692,1866.3535 682,1442.8086 697,1442.8086 L707,1442.8086 " fill="none" style="stroke:#000000;stroke-width:1.0;"/><rect fill="#FFFFFF" height="85.9531" rx="12.5" ry="12.5" style="stroke:#000000;stroke-width:1.0;" width="299" x="707" y="1495.7852"/><text fill="#000000" font-family="思源宋体 VF" font-size="14" lengthAdjust="spacing" textLength="4" x="717" y="1519.3203"> </text><text fill="#000000" font-family="思源宋体 VF" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="94" x="721" y="1519.3203">3. Interpreter</text><text fill="#000000" font-family="思源宋体 VF" font-size="14" lengthAdjust="spacing" textLength="4" x="815" y="1519.3203">:</text><text fill="#000000" font-family="思源宋体 VF" font-size="14" lengthAdjust="spacing" textLength="4" x="717" y="1535.8086"> </text><text fill="#000000" font-family="思源宋体 VF" font-size="14" lengthAdjust="spacing" textLength="275" x="717" y="1552.2969">A way to include language elements in a</text><text fill="#000000" font-family="思源宋体 VF" font-size="14" lengthAdjust="spacing" textLength="60" x="717" y="1568.7852">program</text><path d="M667,1866.3535 L677,1866.3535 C692,1866.3535 682,1538.7617 697,1538.7617 L707,1538.7617 " fill="none" style="stroke:#000000;stroke-width:1.0;"/><rect fill="#FFFFFF" height="85.9531" rx="12.5" ry="12.5" style="stroke:#000000;stroke-width:1.0;" width="277" x="707" y="1591.7383"/><text fill="#000000" font-family="思源宋体 VF" font-size="14" lengthAdjust="spacing" textLength="4" x="717" y="1615.2734"> </text><text fill="#000000" font-family="思源宋体 VF" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="71" x="721" y="1615.2734">4. Iterator</text><text fill="#000000" font-family="思源宋体 VF" font-size="14" lengthAdjust="spacing" textLength="4" x="792" y="1615.2734">:</text><text fill="#000000" font-family="思源宋体 VF" font-size="14" lengthAdjust="spacing" textLength="4" x="717" y="1631.7617"> </text><text fill="#000000" font-family="思源宋体 VF" font-size="14" lengthAdjust="spacing" textLength="253" x="717" y="1648.25">Sequentially access the elements of a</text><text fill="#000000" font-family="思源宋体 VF" font-size="14" lengthAdjust="spacing" textLength="66" x="717" y="1664.7383">collection</text><path d="M667,1866.3535 L677,1866.3535 C692,1866.3535 682,1634.7148 697,1634.7148 L707,1634.7148 " fill="none" style="stroke:#000000;stroke-width:1.0;"/><rect fill="#FFFFFF" height="85.9531" rx="12.5" ry="12.5" style="stroke:#000000;stroke-width:1.0;" width="318" x="707" y="1687.6914"/><text fill="#000000" font-family="思源宋体 VF" font-size="14" lengthAdjust="spacing" textLength="4" x="717" y="1711.2266"> </text><text fill="#000000" font-family="思源宋体 VF" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="81" x="721" y="1711.2266">5. Mediator</text><text fill="#000000" font-family="思源宋体 VF" font-size="14" lengthAdjust="spacing" textLength="4" x="802" y="1711.2266">:</text><text fill="#000000" font-family="思源宋体 VF" font-size="14" lengthAdjust="spacing" textLength="4" x="717" y="1727.7148"> </text><text fill="#000000" font-family="思源宋体 VF" font-size="14" lengthAdjust="spacing" textLength="294" x="717" y="1744.2031">Defines simplified communication between</text><text fill="#000000" font-family="思源宋体 VF" font-size="14" lengthAdjust="spacing" textLength="48" x="717" y="1760.6914">classes</text><path d="M667,1866.3535 L677,1866.3535 C692,1866.3535 682,1730.668 697,1730.668 L707,1730.668 " fill="none" style="stroke:#000000;stroke-width:1.0;"/><rect fill="#FFFFFF" height="85.9531" rx="12.5" ry="12.5" style="stroke:#000000;stroke-width:1.0;" width="296" x="707" y="1783.6445"/><text fill="#000000" font-family="思源宋体 VF" font-size="14" lengthAdjust="spacing" textLength="4" x="717" y="1807.1797"> </text><text fill="#000000" font-family="思源宋体 VF" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="84" x="721" y="1807.1797">6. Memento</text><text fill="#000000" font-family="思源宋体 VF" font-size="14" lengthAdjust="spacing" textLength="4" x="805" y="1807.1797">:</text><text fill="#000000" font-family="思源宋体 VF" font-size="14" lengthAdjust="spacing" textLength="4" x="717" y="1823.668"> </text><text fill="#000000" font-family="思源宋体 VF" font-size="14" lengthAdjust="spacing" textLength="272" x="717" y="1840.1563">Capture and restore an object's internal</text><text fill="#000000" font-family="思源宋体 VF" font-size="14" lengthAdjust="spacing" textLength="33" x="717" y="1856.6445">state</text><path d="M667,1866.3535 L677,1866.3535 C692,1866.3535 682,1826.6211 697,1826.6211 L707,1826.6211 " fill="none" style="stroke:#000000;stroke-width:1.0;"/><rect fill="#FFFFFF" height="85.9531" rx="12.5" ry="12.5" style="stroke:#000000;stroke-width:1.0;" width="292" x="707" y="1879.5977"/><text fill="#000000" font-family="思源宋体 VF" font-size="14" lengthAdjust="spacing" textLength="4" x="717" y="1903.1328"> </text><text fill="#000000" font-family="思源宋体 VF" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="99" x="721" y="1903.1328">7. Null Object</text><text fill="#000000" font-family="思源宋体 VF" font-size="14" lengthAdjust="spacing" textLength="4" x="820" y="1903.1328">:</text><text fill="#000000" font-family="思源宋体 VF" font-size="14" lengthAdjust="spacing" textLength="4" x="717" y="1919.6211"> </text><text fill="#000000" font-family="思源宋体 VF" font-size="14" lengthAdjust="spacing" textLength="268" x="717" y="1936.1094">Designed to act as a default value of an</text><text fill="#000000" font-family="思源宋体 VF" font-size="14" lengthAdjust="spacing" textLength="42" x="717" y="1952.5977">object</text><path d="M667,1866.3535 L677,1866.3535 C692,1866.3535 682,1922.5742 697,1922.5742 L707,1922.5742 " fill="none" style="stroke:#000000;stroke-width:1.0;"/><rect fill="#FFFFFF" height="85.9531" rx="12.5" ry="12.5" style="stroke:#000000;stroke-width:1.0;" width="307" x="707" y="1975.5508"/><text fill="#000000" font-family="思源宋体 VF" font-size="14" lengthAdjust="spacing" textLength="4" x="717" y="1999.0859"> </text><text fill="#000000" font-family="思源宋体 VF" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="82" x="721" y="1999.0859">8. Observer</text><text fill="#000000" font-family="思源宋体 VF" font-size="14" lengthAdjust="spacing" textLength="4" x="803" y="1999.0859">:</text><text fill="#000000" font-family="思源宋体 VF" font-size="14" lengthAdjust="spacing" textLength="4" x="717" y="2015.5742"> </text><text fill="#000000" font-family="思源宋体 VF" font-size="14" lengthAdjust="spacing" textLength="283" x="717" y="2032.0625">A way of notifying change to a number of</text><text fill="#000000" font-family="思源宋体 VF" font-size="14" lengthAdjust="spacing" textLength="48" x="717" y="2048.5508">classes</text><path d="M667,1866.3535 L677,1866.3535 C692,1866.3535 682,2018.5273 697,2018.5273 L707,2018.5273 " fill="none" style="stroke:#000000;stroke-width:1.0;"/><rect fill="#FFFFFF" height="85.9531" rx="12.5" ry="12.5" style="stroke:#000000;stroke-width:1.0;" width="296" x="707" y="2071.5039"/><text fill="#000000" font-family="思源宋体 VF" font-size="14" lengthAdjust="spacing" textLength="4" x="717" y="2095.0391"> </text><text fill="#000000" font-family="思源宋体 VF" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="53" x="721" y="2095.0391">9. State</text><text fill="#000000" font-family="思源宋体 VF" font-size="14" lengthAdjust="spacing" textLength="4" x="774" y="2095.0391">:</text><text fill="#000000" font-family="思源宋体 VF" font-size="14" lengthAdjust="spacing" textLength="4" x="717" y="2111.5273"> </text><text fill="#000000" font-family="思源宋体 VF" font-size="14" lengthAdjust="spacing" textLength="272" x="717" y="2128.0156">Alter an object's behavior when its state</text><text fill="#000000" font-family="思源宋体 VF" font-size="14" lengthAdjust="spacing" textLength="57" x="717" y="2144.5039">changes</text><path d="M667,1866.3535 L677,1866.3535 C692,1866.3535 682,2114.4805 697,2114.4805 L707,2114.4805 " fill="none" style="stroke:#000000;stroke-width:1.0;"/><rect fill="#FFFFFF" height="69.4648" rx="12.5" ry="12.5" style="stroke:#000000;stroke-width:1.0;" width="295" x="707" y="2167.457"/><text fill="#000000" font-family="思源宋体 VF" font-size="14" lengthAdjust="spacing" textLength="4" x="717" y="2190.9922"> </text><text fill="#000000" font-family="思源宋体 VF" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="85" x="721" y="2190.9922">10. Strategy</text><text fill="#000000" font-family="思源宋体 VF" font-size="14" lengthAdjust="spacing" textLength="4" x="806" y="2190.9922">:</text><text fill="#000000" font-family="思源宋体 VF" font-size="14" lengthAdjust="spacing" textLength="4" x="717" y="2207.4805"> </text><text fill="#000000" font-family="思源宋体 VF" font-size="14" lengthAdjust="spacing" textLength="275" x="717" y="2223.9688">Encapsulates an algorithm inside a class</text><path d="M667,1866.3535 L677,1866.3535 C692,1866.3535 682,2202.1895 697,2202.1895 L707,2202.1895 " fill="none" style="stroke:#000000;stroke-width:1.0;"/><rect fill="#FFFFFF" height="85.9531" rx="12.5" ry="12.5" style="stroke:#000000;stroke-width:1.0;" width="308" x="707" y="2246.9219"/><text fill="#000000" font-family="思源宋体 VF" font-size="14" lengthAdjust="spacing" textLength="4" x="717" y="2270.457"> </text><text fill="#000000" font-family="思源宋体 VF" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="154" x="721" y="2270.457">11. Template method</text><text fill="#000000" font-family="思源宋体 VF" font-size="14" lengthAdjust="spacing" textLength="4" x="875" y="2270.457">:</text><text fill="#000000" font-family="思源宋体 VF" font-size="14" lengthAdjust="spacing" textLength="4" x="717" y="2286.9453"> </text><text fill="#000000" font-family="思源宋体 VF" font-size="14" lengthAdjust="spacing" textLength="284" x="717" y="2303.4336">Defer the exact steps of an algorithm to a</text><text fill="#000000" font-family="思源宋体 VF" font-size="14" lengthAdjust="spacing" textLength="58" x="717" y="2319.9219">subclass</text><path d="M667,1866.3535 L677,1866.3535 C692,1866.3535 682,2289.8984 697,2289.8984 L707,2289.8984 " fill="none" style="stroke:#000000;stroke-width:1.0;"/><rect fill="#FFFFFF" height="85.9531" rx="12.5" ry="12.5" style="stroke:#000000;stroke-width:1.0;" width="313" x="707" y="2342.875"/><text fill="#000000" font-family="思源宋体 VF" font-size="14" lengthAdjust="spacing" textLength="4" x="717" y="2366.4102"> </text><text fill="#000000" font-family="思源宋体 VF" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="75" x="721" y="2366.4102">12. Visitor</text><text fill="#000000" font-family="思源宋体 VF" font-size="14" lengthAdjust="spacing" textLength="4" x="796" y="2366.4102">:</text><text fill="#000000" font-family="思源宋体 VF" font-size="14" lengthAdjust="spacing" textLength="4" x="717" y="2382.8984"> </text><text fill="#000000" font-family="思源宋体 VF" font-size="14" lengthAdjust="spacing" textLength="289" x="717" y="2399.3867">Defines a new operation to a class without</text><text fill="#000000" font-family="思源宋体 VF" font-size="14" lengthAdjust="spacing" textLength="50" x="717" y="2415.875">change</text><path d="M667,1866.3535 L677,1866.3535 C692,1866.3535 682,2385.8516 697,2385.8516 L707,2385.8516 " fill="none" style="stroke:#000000;stroke-width:1.0;"/><path d="M308,1219.4141 L318,1219.4141 C333,1219.4141 323,1866.3535 338,1866.3535 L348,1866.3535 " fill="none" style="stroke:#000000;stroke-width:1.0;"/><!--MD5=[5795cd26c842a4de1be62e225fcd8c7f]
+@startmindmap 
+!theme plain 
+skinparam defaultFontName 思源宋体 VF
+
+*: <b>1. Design Patterns</b>:
+
+These design patterns are all about class instantiation. This pattern can be further divided into class-creation patterns and object-creational patterns. While class-creation patterns use inheritance effectively in the instantiation process, object-creation patterns use delegation effectively to get the job done.;
+**: <b>1. Creational design patterns</b>:
+
+These design patterns are all about class instantiation. This pattern can be further divided into class-creation patterns and object-creational patterns. While class-creation patterns use inheritance effectively in the instantiation process, object-creation patterns use delegation effectively to get the job done.;
+***: <b>1. Abstract Factory</b>:
+
+Creates an instance of several families of classes;
+***: <b>2. Builder</b>:
+
+Separates object construction from its representation;
+***: <b>3. Factory Method</b>:
+
+Creates an instance of several derived classes;
+***: <b>4. Object Pool</b>:
+
+Avoid expensive acquisition and release of resources by recycling objects that are no longer in use;
+***: <b>5. Prototype</b>:
+
+A fully initialized instance to be copied or cloned;
+***: <b>6. Singleton</b>:
+
+A class of which only a single instance can exist;
+**: <b>2. Structural design patterns</b>:
+
+These design patterns are all about Class and Object composition. Structural class-creation patterns use inheritance to compose interfaces. Structural object-patterns define ways to compose objects to obtain new functionality.;
+***: <b>1. Adapter</b>:
+
+Match interfaces of different classes;
+***: <b>2. Bridge</b>:
+
+Separates an object’s interface from its implementation;
+***: <b>3. Composite</b>:
+
+A tree structure of simple and composite objects;
+***: <b>4. Decorator</b>:
+
+Add responsibilities to objects dynamically;
+***: <b>5. Facade</b>:
+
+A single class that represents an entire subsystem;
+***: <b>6. Flyweight</b>:
+
+A fine-grained instance used for efficient sharing;
+***: <b>7. Private Class Data</b>:
+
+Restricts accessor/mutator access;
+***: <b>8. Proxy</b>:
+
+An object representing another object;
+**: <b>3. Behavioral design patterns</b>:
+
+These design patterns are all about Class's objects communication. Behavioral patterns are those patterns that are most specifically concerned with communication between objects.;
+***: <b>1. Chain of responsibility</b>:
+
+A way of passing a request between a chain of objects;
+***: <b>2. Command</b>:
+
+Encapsulate a command request as an object;
+***: <b>3. Interpreter</b>:
+
+A way to include language elements in a program;
+***: <b>4. Iterator</b>:
+
+Sequentially access the elements of a collection;
+***: <b>5. Mediator</b>:
+
+Defines simplified communication between classes;
+***: <b>6. Memento</b>:
+
+Capture and restore an object's internal state;
+***: <b>7. Null Object</b>:
+
+Designed to act as a default value of an object;
+***: <b>8. Observer</b>:
+
+A way of notifying change to a number of classes;
+***: <b>9. State</b>:
+
+Alter an object's behavior when its state changes;
+***: <b>10. Strategy</b>:
+
+Encapsulates an algorithm inside a class;
+***: <b>11. Template method</b>:
+
+Defer the exact steps of an algorithm to a subclass;
+***: <b>12. Visitor</b>:
+
+Defines a new operation to a class without change;
+@endmindmap
+
+@startmindmap 
+
+
+
+
+
+
+
+<style>
+  root {
+    BackgroundColor white
+    FontColor black
+    FontName Verdana
+    HyperLinkColor blue
+    LineColor black
+    LineThickness 1
+    Margin 5
+  }
+  caption {
+    LineThickness 0
+  }
+  footer {
+    LineThickness 0
+  }
+  header {
+    LineThickness 0
+  }
+  node {
+    MaximumWidth 300
+  }
+  title {
+    FontSize 22
+    LineThickness 0
+  }
+</style>
+
+skinparam ArrowLollipopColor black
+skinparam BackgroundColor white
+skinparam DefaultFontName Verdana
+skinparam DefaultMonospacedFontName Courier
+skinparam LifelineStrategy nosolid
+skinparam ParticipantPadding 10
+skinparam SequenceLifeLineBorderColor black
+skinparam Shadowing false
+skinparam UseBetaStyle true
+
+skinparam Activity {
+  BackgroundColor white
+  BarColor black
+  BorderColor black
+  FontColor black
+  FontName Verdana
+}
+skinparam Boundary {
+  FontColor black
+}
+skinparam Box {
+  Padding 5
+}
+skinparam CircledCharacter {
+  FontColor black
+  FontName Courier
+  Radius 9
+}
+skinparam Class {
+  BackgroundColor white
+  BorderColor black
+  FontColor black
+  FontName Verdana
+}
+skinparam ClassAttribute {
+  FontColor black
+  FontName Verdana
+}
+skinparam ClassStereotype {
+  FontColor black
+  FontName Verdana
+}
+skinparam Footer {
+  FontColor black
+  FontName Verdana
+}
+skinparam Header {
+  FontColor black
+  FontName Verdana
+}
+skinparam Hyperlink {
+  Color blue
+}
+skinparam IconPackage {
+  Color black
+  BackgroundColor white
+}
+skinparam IconPrivate {
+  Color black
+  BackgroundColor white
+}
+skinparam IconProtected {
+  Color black
+  BackgroundColor white
+}
+skinparam IconPublic {
+  Color black
+  BackgroundColor white
+}
+skinparam Note {
+  FontColor black
+  FontName Verdana
+}
+skinparam Object {
+  BorderColor black
+}
+skinparam Package {
+  BorderColor black
+  FontColor black
+  FontName Verdana
+}
+skinparam State {
+  BackgroundColor white
+  BorderColor black
+}
+skinparam StereotypeA {
+  BackgroundColor white
+  BorderColor black
+}
+skinparam StereotypeC {
+  BackgroundColor white
+  BorderColor black
+}
+skinparam StereotypeE {
+  BackgroundColor white
+  BorderColor black
+}
+skinparam StereotypeI {
+  BackgroundColor white
+  BorderColor black
+}
+skinparam StereotypeN {
+  BackgroundColor white
+  BorderColor black
+}
+skinparam UseCaseStereoType {
+  FontColor black
+  FontName Verdana
+}
+skinparam defaultFontName 思源宋体 VF
+
+*: <b>1. Design Patterns</b>:
+
+These design patterns are all about class instantiation. This pattern can be further divided into class-creation patterns and object-creational patterns. While class-creation patterns use inheritance effectively in the instantiation process, object-creation patterns use delegation effectively to get the job done.;
+**: <b>1. Creational design patterns</b>:
+
+These design patterns are all about class instantiation. This pattern can be further divided into class-creation patterns and object-creational patterns. While class-creation patterns use inheritance effectively in the instantiation process, object-creation patterns use delegation effectively to get the job done.;
+***: <b>1. Abstract Factory</b>:
+
+Creates an instance of several families of classes;
+***: <b>2. Builder</b>:
+
+Separates object construction from its representation;
+***: <b>3. Factory Method</b>:
+
+Creates an instance of several derived classes;
+***: <b>4. Object Pool</b>:
+
+Avoid expensive acquisition and release of resources by recycling objects that are no longer in use;
+***: <b>5. Prototype</b>:
+
+A fully initialized instance to be copied or cloned;
+***: <b>6. Singleton</b>:
+
+A class of which only a single instance can exist;
+**: <b>2. Structural design patterns</b>:
+
+These design patterns are all about Class and Object composition. Structural class-creation patterns use inheritance to compose interfaces. Structural object-patterns define ways to compose objects to obtain new functionality.;
+***: <b>1. Adapter</b>:
+
+Match interfaces of different classes;
+***: <b>2. Bridge</b>:
+
+Separates an object’s interface from its implementation;
+***: <b>3. Composite</b>:
+
+A tree structure of simple and composite objects;
+***: <b>4. Decorator</b>:
+
+Add responsibilities to objects dynamically;
+***: <b>5. Facade</b>:
+
+A single class that represents an entire subsystem;
+***: <b>6. Flyweight</b>:
+
+A fine-grained instance used for efficient sharing;
+***: <b>7. Private Class Data</b>:
+
+Restricts accessor/mutator access;
+***: <b>8. Proxy</b>:
+
+An object representing another object;
+**: <b>3. Behavioral design patterns</b>:
+
+These design patterns are all about Class's objects communication. Behavioral patterns are those patterns that are most specifically concerned with communication between objects.;
+***: <b>1. Chain of responsibility</b>:
+
+A way of passing a request between a chain of objects;
+***: <b>2. Command</b>:
+
+Encapsulate a command request as an object;
+***: <b>3. Interpreter</b>:
+
+A way to include language elements in a program;
+***: <b>4. Iterator</b>:
+
+Sequentially access the elements of a collection;
+***: <b>5. Mediator</b>:
+
+Defines simplified communication between classes;
+***: <b>6. Memento</b>:
+
+Capture and restore an object's internal state;
+***: <b>7. Null Object</b>:
+
+Designed to act as a default value of an object;
+***: <b>8. Observer</b>:
+
+A way of notifying change to a number of classes;
+***: <b>9. State</b>:
+
+Alter an object's behavior when its state changes;
+***: <b>10. Strategy</b>:
+
+Encapsulates an algorithm inside a class;
+***: <b>11. Template method</b>:
+
+Defer the exact steps of an algorithm to a subclass;
+***: <b>12. Visitor</b>:
+
+Defines a new operation to a class without change;
+@endmindmap
+
+PlantUML version 1.2022.6(Wed Jun 22 01:34:49 CST 2022)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Default Encoding: UTF-8
+Language: zh
+Country: CN
+--></g></svg>

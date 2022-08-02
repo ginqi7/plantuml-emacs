@@ -1,0 +1,85 @@
+#+title: Plantuml Emacs
+#+author: Qiqi Jin
+#+language: en
+
+This tool is an Emacs plugin for [[https://plantuml.com/][Plantuml]] . But it will not implement plantuml' all function. The purpose of this tool is using plantuml to generate a preview image to the frequently-used file.
+
+Generate the relevant Mindmap or structure diagram without having to deliberately modify the current file.
+
+
+Currently:
++ you can generate a corresponding Mindmap and Work Breakdown Structure image based on the org mode file.
++ you can generate a corresponding data struct image based on the json file or yaml file.
+
+* Prerequisites
+*[[https://plantuml.com/][plantuml]]*
+
+This Emacs tool use plantuml to generate images for org, json, yaml files.
+
+** Install
++ clone the project in your own emacs configuration files directory, like:
+#+BEGIN_SRC sh
+  git clone git@github.com:ginqi7/plantuml-emacs.git ~/.emacs.d/lisp/plantuml-emacs
+#+END_SRC
+
++ add the path to 'load-path'
+#+BEGIN_SRC emacs-lisp
+  (add-to-list 'load-path (expand-file-name "~/.emacs.d/lisp/d/lisp/plantuml-emacs"))
+#+END_SRC
+
+* Configuration
+Here are a few variables that can be used for configuration:
+There are some variables 
+#+BEGIN_SRC emacs-lisp
+(require 'plantuml)
+(setq plantuml-jar-path "/some/path/plantuml.jar"
+      plantuml-output-type "svg"
+      plantuml-relative-path "./images/"
+      plantuml-theme "plain"
+      plantuml-font "somefont"
+      plantuml-add-index-number t
+      plantuml-log-command t
+      plantuml-mindmap-contains-org-content t
+      plantuml-org-headline-bold t)
+#+end_src
+
+
+* Features
+
+- `plantuml--parse-headlines' Parse all headlines in current buffer (of org mode).
+- `plantuml-org-to-mindmap' Convert org file to mindmap image.
+- `plantuml-display-json' Convert json buffer to image.
+- `plantuml-display-yaml' Convert yaml buffer to image.
+- `plantuml-org-to-mindmap-open' Convert org file to mindmap image and open it.
+- `plantuml-display-json-open' Convert json buffer to image and open it.
+- `plantuml-display-yaml-open' Convert yaml buffer to image and open it.
+- `plantuml-org-to-wbs' Convert org file to Work Breakdown Structure image.
+- `plantuml-org-to-wbs-open' Convert org file to Work Breakdown Structure image and open it.
+- `plantuml-auto-convert-open' Dependen current buffer major mode convert image.
+
+* Example
+** Org Mode
+You can find example org mode file in [[file:example/org-example.org][here]].
+
+You can generate a mindmap just contains headlines:
+
+[[file:example/images/org-example-mindmap.svg]]
+
+You can generate a mindmap contains headlines and first paragraph.
+
+[[file:example/images/org-example-with-content.svg]]
+
+You can generate a Work Breakdown Structure image:
+[[file:example/images/org-example-wbs.svg]]
+
+** JSON
+You can find example json file in [[file:example/json-example.json][here]].
+
+You can generate a data structure image:
+[[file:example/images/json-example.svg]]
+
+** YAML
+You can find example json file in [[file:example/yaml-example.yaml][here]]
+
+You can generate a data structure image:
+[[file:example/images/yaml-example.svg]]
