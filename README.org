@@ -29,7 +29,6 @@ This Emacs tool use plantuml to generate images for org, json, yaml files.
 
 * Configuration
 Here are a few variables that can be used for configuration:
-There are some variables 
 #+BEGIN_SRC emacs-lisp
 (require 'plantuml)
 (setq plantuml-jar-path "/some/path/plantuml.jar"
