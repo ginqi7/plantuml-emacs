@@ -208,14 +208,13 @@ CONTENT is source content."
   (interactive)
       (plantuml--open-ouput-file (plantuml--run-command "mindmap" (plantuml--parse-headlines))))
 
-(defun plantuml-display-json-open ()
+(defun plantuml-display-json-open (&optional json-content)
   "Convert json buffer to image and open it."
   (interactive)
-  (plantuml--open-ouput-file (plantuml--run-command "json"
-                                (substring-no-properties
-                                 (buffer-substring
-                                  (point-min)
-                                  (point-max))))))
+  (let* ((content (substring-no-properties (buffer-string))))
+    (when json-content
+      (setq content json-content))
+    (plantuml--open-ouput-file (plantuml--run-command "json" content))))
 
 (defun plantuml-display-yaml-open ()
   "Convert yaml buffer to image and open it."
