@@ -85,10 +85,14 @@ HEADLINE org headline obj."
          (text-begin (org-element-property :contents-begin paragraph))
          (text-end (org-element-property :contents-end paragraph))
          (text
-          (string-trim
-           (substring-no-properties
-            (buffer-substring text-begin text-end))
-           "\n" "\n")))
+          (if (and text-begin text-end)
+            (string-trim
+             (substring-no-properties
+              (buffer-substring text-begin text-end))
+             "\n" "\n")
+            " "
+            )
+          ))
     (dotimes (i (org-element-property :level headline))
       (setq stars (concat stars "*")))
     (concat
