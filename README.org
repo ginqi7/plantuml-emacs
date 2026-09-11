@@ -45,16 +45,12 @@ Here are a few variables that can be used for configuration:
 
 * Features
 
-- `plantuml--parse-headlines' Parse all headlines in current buffer (of org mode).
+- `plantuml-auto-convert' Automatically convert based on current buffer major mode.
 - `plantuml-org-to-mindmap' Convert org file to mindmap image.
+- `plantuml-org-to-wbs' Convert org file to Work Breakdown Structure image.
 - `plantuml-display-json' Convert json buffer to image.
 - `plantuml-display-yaml' Convert yaml buffer to image.
-- `plantuml-org-to-mindmap-open' Convert org file to mindmap image and open it.
-- `plantuml-display-json-open' Convert json buffer to image and open it.
-- `plantuml-display-yaml-open' Convert yaml buffer to image and open it.
-- `plantuml-org-to-wbs' Convert org file to Work Breakdown Structure image.
-- `plantuml-org-to-wbs-open' Convert org file to Work Breakdown Structure image and open it.
-- `plantuml-auto-convert-open' Dependen current buffer major mode convert image.
+- `plantuml' Transient interface for all commands.
 
 * Example
 ** Org Mode
