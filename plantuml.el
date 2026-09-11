@@ -70,7 +70,7 @@
   :type 'string
   :group 'plantuml)
 
-(defcustom plantuml-cmd-template "cat <<EOF | java -jar %s -t%s -pipe > %s \n%s\nEOF"
+(defcustom plantuml-cmd-template "java -jar %s -t%s %s; mv %s %s"
   "Shell command template for running PlantUML."
   :type 'string
   :group 'plantuml)
@@ -177,22 +177,28 @@ HEADLINE org headline obj."
           (file-name-sans-extension (buffer-name))
           plantuml-output-type))
 
-(defun plantuml--build-source (type content)
+(defun plantuml--build-source-file (type content)
   "Build plantuml source.
 TYPE is plantuml supported type.
 CONTENT is plantuml core content."
-  (concat
-   (format "@start%s \n" type)
-   (format "!theme %s \n" plantuml-theme)
-   (when plantuml-font
-     (format "skinparam defaultFontName %s\n" plantuml-font))
-   content
-   (format "\n@end%s" type)))
+  (let ((source-file (make-temp-file "plantuml-emacs-" nil (concat "." type))))
+    (with-temp-file source-file
+      (insert
+       (concat
+        (format "@start%s \n" type)
+        (format "!theme %s \n" plantuml-theme)
+        (when plantuml-font
+          (format "skinparam defaultFontName %s\n" plantuml-font))
+        content
+        (format "\n@end%s" type))))
+    source-file))
 
 (defun plantuml--check-jar-path ()
   "Check if 'plantuml-jar-path' is specified by user."
   (when (not plantuml-jar-path)
-    (throw 'plantuml-error "Must specify 'plantuml-jar-path'")))
+    (throw 'plantuml-error "Must specify 'plantuml-jar-path'"))
+  (when (not (file-exists-p plantuml-jar-path))
+    (throw 'plantuml-error (format "plantuml-jar-path(%s) not exist." plantuml-jar-path))))
 
 (defun plantuml--log-command (command)
   "Log COMMAND if user specified 'plantuml-log-command'."
@@ -203,12 +209,16 @@ CONTENT is plantuml core content."
 TYPE is plantuml type.
 CONTENT is source content."
   (plantuml--check-jar-path)
-  (let* ((source (plantuml--build-source type content))
+  (let* ((source-file (plantuml--build-source-file type content))
          (output-file (plantuml--build-output-file))
          (command
-          (format plantuml-cmd-template plantuml-jar-path plantuml-output-type
-                  output-file
-                  source))
+          (format plantuml-cmd-template
+                  plantuml-jar-path plantuml-output-type
+                  source-file
+                  (file-name-with-extension
+                   (file-name-sans-extension source-file)
+                   plantuml-output-type)
+                  output-file))
          (process
           (start-process-shell-command "plantuml" "plantuml" command)))
     (plantuml--log-command command)
@@ -268,8 +278,7 @@ CONTENT is source content."
 PROCESS is current process.
 SIGNAL is current signal."
   (when (memq (process-status process) '(exit))
-    (shell-command
-     (format "open '%s'" (process-get process 'output-file)))))
+    (browse-url (process-get process 'output-file))))
 
 (defun plantuml-org-to-wbs ()
   "Convert org file to Work Breakdown Structure image."
