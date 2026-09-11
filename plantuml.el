@@ -60,6 +60,11 @@
 (require 'org-num)
 (require 'subr-x) ;; for when-let
 
+(defcustom plantuml-java-executable (executable-find "java")
+  "Path to Java executable."
+  :type 'string
+  :group 'plantuml)
+
 (defcustom plantuml-jar-path nil
   "Path to PlantUML JAR file."
   :type 'file
@@ -70,7 +75,7 @@
   :type 'string
   :group 'plantuml)
 
-(defcustom plantuml-cmd-template "java -jar %s -t%s %s; mv %s %s"
+(defcustom plantuml-cmd-template "%s -jar %s -t%s %s; mv %s %s"
   "Shell command template for running PlantUML."
   :type 'string
   :group 'plantuml)
@@ -213,6 +218,7 @@ CONTENT is source content."
          (output-file (plantuml--build-output-file))
          (command
           (format plantuml-cmd-template
+                  plantuml-java-executable
                   plantuml-jar-path plantuml-output-type
                   source-file
                   (file-name-with-extension
