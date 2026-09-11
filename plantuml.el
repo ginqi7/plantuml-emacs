@@ -168,10 +168,11 @@ HEADLINE org headline obj."
            (format "Directory \"%s\" not exists, do you want create it ?"
                    (file-truename plantuml-relative-path)))
       (make-directory (file-truename plantuml-relative-path))))
-  (format "%s%s.%s"
-          (file-truename plantuml-relative-path)
-          (file-name-sans-extension (buffer-name))
-          plantuml-output-type))
+  (file-name-with-extension
+   (file-name-concat
+    (file-truename plantuml-relative-path)
+    (file-name-base (buffer-file-name)))
+   plantuml-output-type))
 
 (defun plantuml--build-source-file (type content)
   "Build plantuml source.
