@@ -29,26 +29,18 @@
 ;;
 ;; Below are complete command list:
 ;;
-;;  `plantuml--parse-headlines'
-;;    Parse all headlines in current buffer (of org mode).
+;;  `plantuml-auto-convert'
+;;    Automatically convert based on current buffer major mode.
 ;;  `plantuml-org-to-mindmap'
 ;;    Convert org file to mindmap image.
+;;  `plantuml-org-to-wbs'
+;;    Convert org file to Work Breakdown Structure image.
 ;;  `plantuml-display-json'
 ;;    Convert json buffer to image.
 ;;  `plantuml-display-yaml'
 ;;    Convert yaml buffer to image.
-;;  `plantuml-org-to-mindmap-open'
-;;    Convert org file to mindmap image and open it.
-;;  `plantuml-display-json-open'
-;;    Convert json buffer to image and open it.
-;;  `plantuml-display-yaml-open'
-;;    Convert yaml buffer to image and open it.
-;;  `plantuml-org-to-wbs'
-;;    Convert org file to Work Breakdown Structure image.
-;;  `plantuml-org-to-wbs-open'
-;;    Convert org file to Work Breakdown Structure image and open it.
-;;  `plantuml-auto-convert'
-;;    Dependen current buffer major mode convert image.
+;;  `plantuml-transient'
+;;    Transient prefix for plantuml commands.
 ;;
 ;;; Customizable Options:
 ;;
@@ -288,26 +280,49 @@ CALLBACK is an optional function called with the output file path when done."
    (t
     (throw 'plantuml-error (format "not suport %s file" major-mode)))))
 
-(defun plantuml--transient-arguments-parse ()
-  "Parse transient arguments for plantuml commands."
-  (let ((args (transient-args 'plantuml-transient)))
-    (pcase (car args)
-      ("--browser" #'browse-url)
-      ("--find-file" #'find-file))))
+(defun plantuml--transient-arguments-parse (args)
+  "Parse transient arguments for plantuml commands.
+ARGS is the transient arguments list."
+  (pcase (car args)
+    ("--browser" #'browse-url)
+    ("--find-file" #'find-file)))
+
+(transient-define-suffix plantuml-auto-convert-suffix (args)
+  "Auto convert with transient args."
+  (interactive (list (transient-args 'plantuml-transient)))
+  (plantuml-auto-convert (plantuml--transient-arguments-parse args)))
+
+(transient-define-suffix plantuml-org-to-mindmap-suffix (args)
+  "Org to mindmap with transient args."
+  (interactive (list (transient-args 'plantuml-transient)))
+  (plantuml-org-to-mindmap (plantuml--transient-arguments-parse args)))
+
+(transient-define-suffix plantuml-org-to-wbs-suffix (args)
+  "Org to WBS with transient args."
+  (interactive (list (transient-args 'plantuml-transient)))
+  (plantuml-org-to-wbs (plantuml--transient-arguments-parse args)))
+
+(transient-define-suffix plantuml-display-yaml-suffix (args)
+  "Display YAML with transient args."
+  (interactive (list (transient-args 'plantuml-transient)))
+  (plantuml-display-yaml (plantuml--transient-arguments-parse args)))
+
+(transient-define-suffix plantuml-display-json-suffix (args)
+  "Display JSON with transient args."
+  (interactive (list (transient-args 'plantuml-transient)))
+  (plantuml-display-json (plantuml--transient-arguments-parse args)))
 
 (transient-define-prefix plantuml-transient ()
-  "PlantUML Commands"
+  "PlantUML Commands."
   ["Parameters"
    ("-b" "Open with browser" "--browser")
    ("-o" "Open with `find-file'" "--find-file")]
   ["Commands"
-   ("a" "Auto Convert" (lambda () (interactive) (plantuml-auto-convert (plantuml--transient-arguments-parse))))
-   ("om" "Org to MindMap" (lambda () (interactive) (plantuml-org-to-mindmap (plantuml--transient-arguments-parse))))
-   ("ow" "Org to Work breakdown structure" (lambda () (interactive) (plantuml-org-to-wbs (plantuml--transient-arguments-parse))))
-   ("y" "Display YAML" (lambda () (interactive) (plantuml-display-yaml (plantuml--transient-arguments-parse))))
-   ("j" "Display JSON" (lambda () (interactive) (plantuml-display-json (plantuml--transient-arguments-parse))))])
-
-;; (args (transient-args transient-current-prefix))
+   ("a" "Auto Convert" plantuml-auto-convert-suffix)
+   ("om" "Org to MindMap" plantuml-org-to-mindmap-suffix)
+   ("ow" "Org to Work breakdown structure" plantuml-org-to-wbs-suffix)
+   ("y" "Display YAML" plantuml-display-yaml-suffix)
+   ("j" "Display JSON" plantuml-display-json-suffix)])
 
 (provide 'plantuml)
 ;;; plantuml.el ends here
