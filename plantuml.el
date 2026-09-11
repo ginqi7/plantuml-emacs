@@ -1,9 +1,12 @@
-;;; plantuml.el --- A plantuml plugin for Emacs      -*- lexical-binding: t; -*-
+;;; plantuml.el --- PlantUML integration   -*- lexical-binding: t; -*-
 
 ;; Copyright (C) 2022  Qiqi Jin
 
 ;; Author: Qiqi Jin <ginqi7@gmail.com>
+;; URL: https://github.com/ginqi7/plantuml-emacs
 ;; Keywords: lisp, tools
+;; Version: 0.0.1
+;; Package-Requires: ((emacs "27.1"))
 
 ;; This program is free software; you can redistribute it and/or modify
 ;; it under the terms of the GNU General Public License as published by
@@ -19,8 +22,8 @@
 ;; along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
 ;;; Commentary:
-
-;; 
+;; This package provides PlantUML integration for Emacs, allowing you to
+;; convert org files, JSON, and YAML to PlantUML diagrams (mindmaps, WBS, etc.).
 
 ;;; Commands:
 ;;
@@ -57,17 +60,55 @@
 (require 'org-num)
 (require 'subr-x) ;; for when-let
 
-(defvar plantuml-jar-path nil)
-(defvar plantuml-output-type "svg")
-(defvar plantuml-cmd-template "cat <<EOF | java -jar %s -t%s -pipe > %s \n%s\nEOF")
-(defvar plantuml-relative-path "./")
-(defvar plantuml-mindmap-contains-org-content nil)
-(defvar plantuml-theme "_none_")
-(defvar plantuml-font nil)
-(defvar plantuml-add-index-number nil)
-(defvar plantuml-log-command nil)
-(defvar plantuml-org-headline-bold nil)
+(defcustom plantuml-jar-path nil
+  "Path to PlantUML JAR file."
+  :type 'file
+  :group 'plantuml)
 
+(defcustom plantuml-output-type "svg"
+  "Output type for PlantUML images (e.g., svg, png)."
+  :type 'string
+  :group 'plantuml)
+
+(defcustom plantuml-cmd-template "cat <<EOF | java -jar %s -t%s -pipe > %s \n%s\nEOF"
+  "Shell command template for running PlantUML."
+  :type 'string
+  :group 'plantuml)
+
+(defcustom plantuml-relative-path "./"
+  "Relative path for saving PlantUML output files."
+  :type 'directory
+  :group 'plantuml)
+
+(defcustom plantuml-mindmap-contains-org-content nil
+  "Non-nil means include org content in mindmap nodes."
+  :type 'boolean
+  :group 'plantuml)
+
+(defcustom plantuml-theme "_none_"
+  "PlantUML theme to use."
+  :type 'string
+  :group 'plantuml)
+
+(defcustom plantuml-font nil
+  "Font name for PlantUML diagrams."
+  :type '(choice (const nil) string)
+  :group 'plantuml)
+
+(defcustom plantuml-add-index-number nil
+  "Non-nil means add index numbers to mindmap nodes."
+  :type 'boolean
+  :group 'plantuml)
+
+(defcustom plantuml-log-command nil
+  "Non-nil means log PlantUML commands before execution."
+  :type 'boolean
+  :group 'plantuml)
+
+(defcustom plantuml-org-headline-bold nil
+  "Non-nil means make org headlines bold in mindmap."
+  :type 'boolean
+  :group 'plantuml)
 
 (defun plantuml--headline-txt (headline)
   "Parse org headline obj to plantuml text.
@@ -90,9 +131,8 @@ HEADLINE org headline obj."
              (substring-no-properties
               (buffer-substring text-begin text-end))
              "\n" "\n")
-            " "
-            )
-          ))
+            " ")))
+
     (dotimes (i (org-element-property :level headline))
       (setq stars (concat stars "*")))
     (concat
@@ -158,7 +198,6 @@ CONTENT is plantuml core content."
   "Log COMMAND if user specified 'plantuml-log-command'."
   (when plantuml-log-command (print command)))
 
-
 (defun plantuml--run-command (type content)
   "Run plantuml command.
 TYPE is plantuml type.
@@ -194,7 +233,6 @@ CONTENT is source content."
   (plantuml--run-command "yaml"
                          (substring-no-properties
                           (buffer-substring (point-min) (point-max)))))
-
 
 (defun plantuml-org-to-mindmap-open ()
   "Convert org file to mindmap image and open it."
@@ -271,4 +309,3 @@ SIGNAL is current signal."
 
 (provide 'plantuml)
 ;;; plantuml.el ends here
-
