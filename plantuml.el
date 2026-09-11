@@ -6,7 +6,7 @@
 ;; URL: https://github.com/ginqi7/plantuml-emacs
 ;; Keywords: lisp, tools
 ;; Version: 0.0.1
-;; Package-Requires: ((emacs "28.1"))
+;; Package-Requires: ((emacs "29.1"))
 
 ;; This program is free software; you can redistribute it and/or modify
 ;; it under the terms of the GNU General Public License as published by
@@ -47,7 +47,7 @@
 ;;    Convert org file to Work Breakdown Structure image.
 ;;  `plantuml-org-to-wbs-open'
 ;;    Convert org file to Work Breakdown Structure image and open it.
-;;  `plantuml-auto-convert-open'
+;;  `plantuml-auto-convert'
 ;;    Dependen current buffer major mode convert image.
 ;;
 ;;; Customizable Options:
@@ -59,6 +59,7 @@
 (require 'org-element)
 (require 'org-num)
 (require 'subr-x) ;; for when-let
+(require 'transient)
 
 (defcustom plantuml-java-executable (executable-find "java")
   "Path to Java executable."
@@ -207,10 +208,11 @@ CONTENT is plantuml core content."
   "Log COMMAND if user specified `plantuml-log-command'."
   (when plantuml-log-command (print command)))
 
-(defun plantuml--run-command (type content)
+(defun plantuml--run-command (type content &optional callback)
   "Run plantuml command.
 TYPE is plantuml type.
-CONTENT is source content."
+CONTENT is source content.
+CALLBACK is an optional function called with the output file path when done."
   (plantuml--check-jar-path)
   (let* ((source-file (plantuml--build-source-file type content))
          (output-file (plantuml--build-output-file))
@@ -227,98 +229,85 @@ CONTENT is source content."
           (start-process-shell-command "plantuml" "plantuml" command)))
     (plantuml--log-command command)
     (process-put process 'output-file output-file)
+    (set-process-sentinel
+     process
+     (lambda (_proc _)
+       (when (memq (process-status process) '(exit))
+         (message (format "PlantUML Convert Finished to %s" (process-get process 'output-file)))
+         (when callback
+           (funcall callback (process-get process 'output-file))))))
     process))
 
-(defun plantuml-org-to-mindmap ()
-  "Convert org file to mindmap image."
+(defun plantuml-org-to-mindmap (&optional callback)
+  "Convert org file to mindmap image.
+CALLBACK is an optional function called with the output file path when done."
   (interactive)
-  (plantuml--run-command "mindmap" (plantuml--parse-headlines)))
+  (plantuml--run-command "mindmap" (plantuml--parse-headlines) callback))
 
-(defun plantuml-display-json ()
-  "Convert json buffer to image."
+(defun plantuml-display-json (&optional callback)
+  "Convert json buffer to image.
+CALLBACK is an optional function called with the output file path when done."
   (interactive)
-  (plantuml--run-command "json"
-                         (substring-no-properties
-                          (buffer-substring (point-min) (point-max)))))
+  (plantuml--run-command "json" (buffer-string) callback))
 
-(defun plantuml-display-yaml ()
-  "Convert yaml buffer to image."
+(defun plantuml-display-yaml (&optional callback)
+  "Convert yaml buffer to image.
+CALLBACK is an optional function called with the output file path when done."
   (interactive)
-  (plantuml--run-command "yaml"
-                         (substring-no-properties
-                          (buffer-substring (point-min) (point-max)))))
+  (plantuml--run-command "yaml" (buffer-string) callback))
 
-(defun plantuml-org-to-mindmap-open ()
-  "Convert org file to mindmap image and open it."
+(defun plantuml-org-to-wbs (&optional callback)
+  "Convert org file to Work Breakdown Structure image.
+CALLBACK is an optional function called with the output file path when done."
   (interactive)
-  (let ((process
-         (plantuml--run-command "mindmap" (plantuml--parse-headlines))))
-    (set-process-sentinel process #'plantuml--open-ouput-file-sentinel)))
+  (plantuml--run-command "wbs" (plantuml--parse-headlines) callback))
 
-(defun plantuml-display-json-open ()
-  "Convert json buffer to image and open it."
-  (interactive)
-  (let ((process
-         (plantuml--run-command "json"
-                                (substring-no-properties
-                                 (buffer-substring
-                                  (point-min)
-                                  (point-max))))))
-    (set-process-sentinel process #'plantuml--open-ouput-file-sentinel)))
-
-(defun plantuml-display-yaml-open ()
-  "Convert yaml buffer to image and open it."
-  (interactive)
-  (let ((process
-         (plantuml--run-command "yaml"
-                                (substring-no-properties
-                                 (buffer-substring
-                                  (point-min)
-                                  (point-max))))))
-    (set-process-sentinel process #'plantuml--open-ouput-file-sentinel)))
-
-(defun plantuml--open-ouput-file-sentinel (process _)
-  "Define a sentinel, when process finish, open output file.
-PROCESS is current process.
-SIGNAL is current signal."
-  (when (memq (process-status process) '(exit))
-    (browse-url (process-get process 'output-file))))
-
-(defun plantuml-org-to-wbs ()
-  "Convert org file to Work Breakdown Structure image."
-  (interactive)
-  (plantuml--run-command "wbs" (plantuml--parse-headlines)))
-
-(defun plantuml-org-to-wbs-open ()
-  "Convert org file to Work Breakdown Structure image and open it."
-  (interactive)
-  (let ((process
-         (plantuml--run-command "wbs" (plantuml--parse-headlines))))
-    (set-process-sentinel process #'plantuml--open-ouput-file-sentinel)))
-
-(defun plantuml--auto-convert-org-open ()
-  "Select a type will convert."
+(defun plantuml--auto-convert-org (&optional callback)
+  "Select a type to convert.
+CALLBACK is an optional function called with the output file path when done."
   (let ((selected-item
          (completing-read "Please choose a plantuml type you will convert"
                           '("Mind Map" "Work Breakdown Structure"))))
     (cond
      ((string= "Mind Map" selected-item)
-      (plantuml-org-to-mindmap-open))
+      (plantuml-org-to-mindmap callback))
      ((string= "Work Breakdown Structure" selected-item)
-      (plantuml-org-to-wbs-open)))))
+      (plantuml-org-to-wbs callback)))))
 
-(defun plantuml-auto-convert-open ()
-  "Dependen current buffer major mode convert image."
+(defun plantuml-auto-convert (&optional callback)
+  "Depend on current buffer major mode to convert image.
+CALLBACK is an optional function called with the output file path when done."
   (interactive)
   (cond
-   ((eq major-mode #'json-mode)
-    (plantuml-display-json-open))
-   ((eq major-mode #'yaml-mode)
-    (plantuml-display-yaml-open))
+   ((member major-mode '(json-ts-mode js-json-mode json-mode))
+    (plantuml-display-json callback))
+   ((member major-mode '(yaml-mode yaml-ts-mode))
+    (plantuml-display-yaml callback))
    ((eq major-mode #'org-mode)
-    (plantuml--auto-convert-org-open))
+    (plantuml--auto-convert-org callback))
    (t
     (throw 'plantuml-error (format "not suport %s file" major-mode)))))
+
+(defun plantuml--transient-arguments-parse ()
+  "Parse transient arguments for plantuml commands."
+  (let ((args (transient-args 'plantuml-transient)))
+    (pcase (car args)
+      ("--browser" #'browse-url)
+      ("--find-file" #'find-file))))
+
+(transient-define-prefix plantuml-transient ()
+  "PlantUML Commands"
+  ["Parameters"
+   ("-b" "Open with browser" "--browser")
+   ("-o" "Open with `find-file'" "--find-file")]
+  ["Commands"
+   ("a" "Auto Convert" (lambda () (interactive) (plantuml-auto-convert (plantuml--transient-arguments-parse))))
+   ("om" "Org to MindMap" (lambda () (interactive) (plantuml-org-to-mindmap (plantuml--transient-arguments-parse))))
+   ("ow" "Org to Work breakdown structure" (lambda () (interactive) (plantuml-org-to-wbs (plantuml--transient-arguments-parse))))
+   ("y" "Display YAML" (lambda () (interactive) (plantuml-display-yaml (plantuml--transient-arguments-parse))))
+   ("j" "Display JSON" (lambda () (interactive) (plantuml-display-json (plantuml--transient-arguments-parse))))])
+
+;; (args (transient-args transient-current-prefix))
 
 (provide 'plantuml)
 ;;; plantuml.el ends here
