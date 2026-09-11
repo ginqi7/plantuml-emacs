@@ -6,7 +6,7 @@
 ;; URL: https://github.com/ginqi7/plantuml-emacs
 ;; Keywords: lisp, tools
 ;; Version: 0.0.1
-;; Package-Requires: ((emacs "27.1"))
+;; Package-Requires: ((emacs "28.1"))
 
 ;; This program is free software; you can redistribute it and/or modify
 ;; it under the terms of the GNU General Public License as published by
@@ -137,9 +137,7 @@ HEADLINE org headline obj."
               (buffer-substring text-begin text-end))
              "\n" "\n")
             " ")))
-
-    (dotimes (i (org-element-property :level headline))
-      (setq stars (concat stars "*")))
+    (setq stars (make-string (org-element-property :level headline) ?*))
     (concat
      stars
      (when plantuml-mindmap-contains-org-content ":")
@@ -199,14 +197,14 @@ CONTENT is plantuml core content."
     source-file))
 
 (defun plantuml--check-jar-path ()
-  "Check if 'plantuml-jar-path' is specified by user."
+  "Check if `plantuml-jar-path' is specified by user."
   (when (not plantuml-jar-path)
     (throw 'plantuml-error "Must specify 'plantuml-jar-path'"))
   (when (not (file-exists-p plantuml-jar-path))
     (throw 'plantuml-error (format "plantuml-jar-path(%s) not exist." plantuml-jar-path))))
 
 (defun plantuml--log-command (command)
-  "Log COMMAND if user specified 'plantuml-log-command'."
+  "Log COMMAND if user specified `plantuml-log-command'."
   (when plantuml-log-command (print command)))
 
 (defun plantuml--run-command (type content)
@@ -279,7 +277,7 @@ CONTENT is source content."
                                   (point-max))))))
     (set-process-sentinel process #'plantuml--open-ouput-file-sentinel)))
 
-(defun plantuml--open-ouput-file-sentinel (process signal)
+(defun plantuml--open-ouput-file-sentinel (process _)
   "Define a sentinel, when process finish, open output file.
 PROCESS is current process.
 SIGNAL is current signal."
