@@ -1,0 +1,9 @@
+;;; -*- mode: emacs-lisp; lexical-binding: t -*-
+
+(eldev-use-package-archive 'gnu-elpa)
+(eldev-use-package-archive 'melpa)
+
+(unless (file-exists-p "~/plantuml.jar")
+  (shell-command-to-string (format "wget %s -O %s"
+                                   "https://github.com/plantuml/plantuml/releases/download/v1.2026.8/plantuml-1.2026.8.jar"
+                                   "~/plantuml.jar")))
