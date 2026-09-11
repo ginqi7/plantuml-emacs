@@ -108,27 +108,32 @@
   :type 'boolean
   :group 'plantuml)
 
+(defun plantuml--headline-first-paragraph (headline)
+  "Get the first paragraph from HEADLINE's section content."
+  (org-element-map
+      (seq-find
+       (lambda (elem)
+         (eq (org-element-type elem) 'section))
+       (org-element-contents headline))
+      'paragraph
+    #'identity
+    nil
+    'first-match
+    'no-recursion))
+
 (defun plantuml--headline-txt (headline)
   "Parse org headline obj to plantuml text.
 HEADLINE org headline obj."
   (let* ((stars)
-         (paragraph
-          (org-element-map
-              headline
-              'paragraph
-            #'identity
-            nil
-            'first-match
-            'no-recursion))
-
+         (paragraph (plantuml--headline-first-paragraph headline))
          (text-begin (org-element-property :contents-begin paragraph))
          (text-end (org-element-property :contents-end paragraph))
          (text
           (if (and text-begin text-end)
-            (string-trim
-             (substring-no-properties
-              (buffer-substring text-begin text-end))
-             "\n" "\n")
+              (string-trim
+               (substring-no-properties
+                (buffer-substring text-begin text-end))
+               "\n" "\n")
             " ")))
     (setq stars (make-string (org-element-property :level headline) ?*))
     (concat
